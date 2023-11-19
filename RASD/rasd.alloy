@@ -6,10 +6,12 @@ abstract sig Status{}
 sig Open extends Status{}
 sig Closed extends Status{}
 sig Completed extends Status{}
+sig Score{}
 
 sig Team{
     team_leader: one Student,
     team_mates: set Student,
+    score: lone Score,
 }
 
 sig Battle{
