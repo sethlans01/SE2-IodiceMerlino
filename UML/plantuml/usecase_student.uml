@@ -1,0 +1,46 @@
+@startuml
+left to right direction
+
+actor Student as S
+actor :Team Leader: as TL
+
+usecase (Login) as UC1
+usecase (Join tournament) as UC2
+usecase (Create team) as UC3
+usecase (Join team) as UC4
+usecase (Invite another student to the team) as UC5
+usecase (Check rank in tournament) as UC8
+usecase (Pushes solution) as UC9
+
+
+actor :Github API: as GA
+
+S --> UC2 : <<initiate>>
+S --> UC4 : <<initiate>>
+S --> UC8 : <<initiate>>
+S --> UC9 : <<initiate>>
+
+TL --> UC3 : <<initiate>>
+TL --> UC5 : <<initiate>>
+TL --> UC4 : <<participate>>
+
+GA ---> UC9 : <<participate>>
+GA ---> UC4 : <<participate>>
+
+
+UC2 ..> UC1 : <<include>>
+UC3 ..> UC1 : <<include>>
+UC4 ..> UC1 : <<include>>
+UC5 ..> UC1 : <<include>>
+UC8 ..> UC1 : <<include>>
+
+
+@enduml
+
+
+
+
+    
+
+
+

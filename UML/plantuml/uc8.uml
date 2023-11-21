@@ -1,0 +1,32 @@
+@startuml
+
+note over Student: The Student is logged in the system, has enrolled\nIn a tournament and has been invited in a team
+
+Student -> System: select tournament
+activate System
+System --> Student: tournament view
+deactivate System
+
+Student -> System: select battle
+activate System
+System --> Student: battle view
+deactivate System
+
+
+Student -> System: get list of invites
+activate System
+System --> Student: list of invites
+deactivate System
+
+Student -> System: accept invite
+activate System
+System --> System: check  the student is not in a team for this battle\ncheck the team is not at maximum capacity
+
+System -> "Github Api": invite student to team repository
+activate "Github Api"
+"Github Api" --> System: success
+deactivate "Github Api"
+
+System --> Student: team joined
+deactivate System
+@enduml

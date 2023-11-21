@@ -1,0 +1,28 @@
+@startuml
+
+note over Student: The Student is logged in the system\nhas enrolled In a tournament\n and is part of a team
+
+
+Student -> System: select tournament
+activate System
+System --> Student: tournament view
+deactivate System
+
+Student -> System: select battle
+activate System
+System --> Student: battle view
+deactivate System
+
+Student -> System: get available students
+activate System
+System -> System: check  the student is team leader
+System --> Student: list of students
+deactivate System
+
+Student -> System: select student
+activate System
+System -> System: check the student is not in a team for this battle\ncheck the team is not at maximum capacity
+System -> System: register invite
+System --> Student: student invited
+deactivate System
+@enduml

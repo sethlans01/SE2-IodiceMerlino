@@ -1,0 +1,16 @@
+@startuml
+
+note over Student: The Student is logged in the system\nhas enrolled In a tournament
+
+
+Student -> System: select tournament
+activate System
+System --> Student: tournament view
+deactivate System
+
+Student -> System: get rankings
+activate System
+System --> Student: rankings
+deactivate System
+
+@enduml
