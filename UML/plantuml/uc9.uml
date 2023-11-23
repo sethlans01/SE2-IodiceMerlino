@@ -22,7 +22,6 @@ deactivate System
 Student -> System: select student
 activate System
 System -> System: check the student is not in a team for this battle\ncheck the team is not at maximum capacity
-System -> System: register invite
-System --> Student: student invited
+System -> "Invited Student": new invite available
 deactivate System
 @enduml

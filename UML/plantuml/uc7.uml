@@ -6,7 +6,9 @@ System --> Student: tournament view
 deactivate System
 Student -> System: create new team
 activate System
-System -> System: check team name is available\ncheck the student is not in another team for this battle\ncheck the provided repository is valid
+System -> System: check team name is available\ncheck the student is not in another team for this battle
+System -> "Github api": fork battle's repository
+"Github api" --> System: success
 System --> Student: team created
 deactivate System
 @enduml
