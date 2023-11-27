@@ -72,19 +72,18 @@ fact StudentCanOnlyBeInOneTeamPerBattle{
 }
 
 assert MoreBattleInTournamet{
-	all t: Tournament | some b1,b2: Battle | (not b1 = b2) and (b1.tournament = t and b2.tournament = t) 
+	all t: Tournament | all b1,b2: Battle | (b1.tournament = t and b2.tournament = t) iff (b1 in t.battles and b2 in t.battles) 
 }
 
 pred StudentInBattle[s: Student, b: Battle]{
     some t: b.teams | s in t.team_mates
 }
 
-assert StudentInMultipleBattleForATournament{
-	all t: Tournament | some b1,b2: Battle | some s: Student | (b1.tournament = t and b2.tournament = t)  and (StudentInBattle[s,b1] and StudentInBattle[s,b2])
-}
-
 assert StudentInMoreTeamMeansTeamsNotInSameBattle{
     all s: Student | all t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies (not t1.battle = t2.battle)
 }
 
-run {} for 10
+check AllEducatorsCanManageTheirTournament
+check AllEducatorsCanCreateBattles
+check MoreBattleInTournamet
+check StudentInMoreTeamMeansTeamsNotInSameBattle
