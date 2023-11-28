@@ -19,26 +19,6 @@ sig Tournament{
     students: set Student
 }
 
-fact CreatorIsAllowedEdcator{
-    all e: Educator | all t: Tournament | t.creator = e implies e in t.allowed_educators
-}
-
-fact BattleIsPartOfTournament{
-    all t: Tournament | all b: Battle | b.tournament = t iff b in t.battles
-}
-
-fact TeamIsPartOfBattle{
-    all t: Team | all b: Battle | t.battle = b iff t in b.teams
-}
-
-fact AllEducatorsCanCreateTournaments {
-    all e: Educator | some t:Tournament | t.creator = e
-}
-
-fact BattlesCreatorsNeedToBeAllowed{
-    all e: Educator | all b: Battle | b.creator = e iff e in b.tournament.allowed_educators 
-}
-
 pred CanCreateBattles[e : Educator, t:Tournament]{
     e in t.allowed_educators
 }
@@ -51,16 +31,24 @@ pred CanCloseTournament[e : Educator, t:Tournament]{
     t.creator = e
 }
 
-assert AllEducatorsCanManageTheirTournament {
-    all e: Educator | some t:Tournament | CreatedTournament[e,t] and CanCloseTournament[e,t]
+pred CanGradeSolutions[e: Educator, b: Battle]{
+    e = b.creator
 }
 
-assert AllEducatorsCanCreateBattles {
-    all e: Educator | some t:Tournament | CanCreateBattles[e,t]
+pred StudentInBattle[s: Student, b: Battle]{
+    some t: b.teams | s in t.team_mates
 }
 
-fact AllStudentsCanEnrollInTournament{
-   all s: Student | some t: Tournament | s in t.students
+fact CreatorIsAllowedEdcator{
+    all e: Educator | all t: Tournament | t.creator = e implies e in t.allowed_educators
+}
+
+fact BattleIsPartOfTournament{
+    all t: Tournament | all b: Battle | b.tournament = t iff b in t.battles
+}
+
+fact TeamIsPartOfBattle{
+    all t: Team | all b: Battle | t.battle = b iff t in b.teams
 }
 
 fact StudentInTeamHasToBeEnrolled{
@@ -68,22 +56,18 @@ fact StudentInTeamHasToBeEnrolled{
 }
 
 fact StudentCanOnlyBeInOneTeamPerBattle{
-    all t1,t2 : Team | (t1.battle = t2.battle) implies no t1.team_mates & t2.team_mates
+    all s: Student | all t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies (t1.battle = t2.battle)
 }
 
-assert MoreBattleInTournamet{
-	all t: Tournament | all b1,b2: Battle | (b1.tournament = t and b2.tournament = t) iff (b1 in t.battles and b2 in t.battles) 
+assert CreatorCanManageTournament{
+    all e: Educator | all t: Tournament | CreatedTournament[e,t] implies (CanCloseTournament[e,t] and CanCreateBattles[e,t])
 }
 
-pred StudentInBattle[s: Student, b: Battle]{
-    some t: b.teams | s in t.team_mates
+assert NoCommonTeammatesInBattle{
+    all t1,t2: Team | t1.battle = t2.battle implies no (t1.team_mates & t2.team_mates)
 }
 
-assert StudentInMoreTeamMeansTeamsNotInSameBattle{
-    all s: Student | all t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies (not t1.battle = t2.battle)
-}
+check CreatorCanManageTournament
+check NoCommonTeammatesInBattle
 
-check AllEducatorsCanManageTheirTournament
-check AllEducatorsCanCreateBattles
-check MoreBattleInTournamet
-check StudentInMoreTeamMeansTeamsNotInSameBattle
+run {} for exactly 2 Tournament, exactly 3 Educator, exactly 10 Student,  exactly 4 Battle,  exactly 8 Team
