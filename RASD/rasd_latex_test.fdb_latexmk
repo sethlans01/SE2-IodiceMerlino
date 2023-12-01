@@ -1,0 +1,26 @@
+# Fdb version 4
+["pdflatex"] 1701336457 "/home/pinguinobiricchino/Documenti/uni/SE2-IodiceMerlino/RASD/rasd_latex_test.tex" "rasd_latex_test.pdf" "rasd_latex_test" 1701336457 2
+  "/home/pinguinobiricchino/Documenti/uni/SE2-IodiceMerlino/RASD/rasd_latex_test.tex" 1701335891 52902 4c53c1f122e02dbef49def90d391b3ad ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1689984000 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1689984000 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty" 1678653221 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty" 1678653221 71836 1a735454ad10692452eb2f2fc37f3865 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty" 1654720880 18387 8f900a490197ebaf93c02ae9476d4b09 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty" 1654720880 8010 a8d949cbdbc5c983593827c9eec252e1 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty" 1654720880 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1701336350 6474237 47ae0aafcdfdfa37d092c9e6b8843123 ""
+  "multirow.sty" 0 -1 0 ""
+  "rasd_latex_test.aux" 1701336457 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "rasd_latex_test.tex" 1701335891 52902 4c53c1f122e02dbef49def90d391b3ad ""
+  (generated)
+  "rasd_latex_test.aux"
+  "rasd_latex_test.log"
+  "rasd_latex_test.pdf"
+  (rewritten before read)
