@@ -56,7 +56,7 @@ fact StudentInTeamHasToBeEnrolled{
 }
 
 fact StudentCanOnlyBeInOneTeamPerBattle{
-    all s: Student | all t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies (t1.battle = t2.battle)
+	all disj t1,t2: Team | t1.battle = t2.battle implies no (t1.team_mates & t2.team_mates)
 }
 
 assert CreatorCanManageTournament{
@@ -64,7 +64,7 @@ assert CreatorCanManageTournament{
 }
 
 assert NoCommonTeammatesInBattle{
-    all t1,t2: Team | t1.battle = t2.battle implies no (t1.team_mates & t2.team_mates)
+        all s: Student | all disj t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies not (t1.battle = t2.battle)
 }
 
 check CreatorCanManageTournament

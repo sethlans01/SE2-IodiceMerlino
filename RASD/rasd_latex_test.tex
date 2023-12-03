@@ -5,6 +5,7 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{hyperref}
+\usepackage{listings}
 \graphicspath{ {./images} }
 \title{Requirements And Specifications Document}
 \author{
@@ -554,11 +555,13 @@ Entry Condition & 	\\
 \multirow{5}{4em}{Event Flow}
 & 1- The Student selects the tournament\\
 & 2- The System returns the view of the tournament\\
-& 3- The Student ask the system to create a team\\
-& 4- The System checks team name is available\\
-& 5- The System checks the student is not in another team for this battle\\
-& 6- The System creates a fork of the battle's repository on the student's account\\
-& 5- The Team is created\\
+& 3- The Student select the battle\\
+& 4- The System return the view of the battle\\
+& 5- The Student ask the system to create a team\\
+& 6- The System checks team name is available\\
+& 7- The System checks the student is not in another team for this battle\\
+& 8- The System creates a fork of the battle's repository on the student's account\\
+& 9- The Team is created\\
 \hline
 Exit Condition & The Team is created\\
 \hline
@@ -618,10 +621,10 @@ Entry Condition & The Student is logged in the system, has enrolled in a tournam
 & 2- The System returns the view of the tournament\\
 & 3- The Student select the battle\\
 & 4- The System return the view of the battle\\
-& 5- The Student ask the system for a list of all available students for this battle\\
-& 6- The System checks that the student is the team leader\\
+& 5- The Student ask the system for a list of all available students for this battle\\\
 & 7- The System return the list\\
-& 8- The Student select a student\\
+& 7- The Student select a student\\
+& 8- The System checks that the student is the team leader\
 & 9- The System checks that the invited student is not in a team for this battle and the team is not at maximum capacity\\
 & 10- The System sends the invite\\
 \hline
@@ -715,7 +718,7 @@ Name & Login of a User\\
 & User\\
 & Github API\\
 \hline
-Entry Condition & The user access the system\\
+Entry Condition & The user logs in the system\\
 \hline
 \multirow{8}{4em}{Event Flow}
 & 1- The User ask the system to log in\\
@@ -778,37 +781,37 @@ Exception & 3- The access token is not valid\\
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image11.png}
+    \includegraphics[width=\linewidth]{uc8.jpg}
    \captionof{figure}{[UC8] Student joins a team}
   \label{fig:uc8}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image13.png}
+    \includegraphics[width=\linewidth]{uc9.jpg}
    \captionof{figure}{[UC9] Student invites another student to the team}
   \label{fig:uc9}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image18.png}
+    \includegraphics[width=\linewidth]{uc10.jpg}
    \captionof{figure}{[UC10] Student checks his rank for a tournament they are participating in}
   \label{fig:uc10}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image7.png}
+    \includegraphics[width=\linewidth]{uc11.jpg}
    \captionof{figure}{[UC11] A team pushes their solution to GitHub}
   \label{fig:uc11}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image20.png}
+    \includegraphics[width=\linewidth]{uc12.jpg}
    \captionof{figure}{[UC12] Battle’s deadline is reached}
   \label{fig:uc12}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=\linewidth]{image3.png}
+    \includegraphics[width=\linewidth]{uc13.jpg}
    \captionof{figure}{[UC13] - Login of a User}
   \label{fig:uc13}
 \end{center}
@@ -1050,14 +1053,96 @@ Self hosted component of the stystem must be able to run on a Linux server.
 
 \newpage
 \section{Formal Analysis}
-With alloy we can formally verify that given the domain assumptions as fact and considering the requirements true, we can reach all goals.
+With alloy we can formally verify that the constraints of the system are coherent and true
 
 \subsection{Signatures}
 With the signatures we describe entities that are part of the system with their relationships.
-
-\subsection{Facts}
+\begin{lstlisting}[language=alloy]
+  sig Student{}
+  sig Educator{}
+  
+  sig Team{
+      team_mates: some Student,
+      battle: one Battle
+  }
+  
+  sig Battle{
+      creator: one Educator,
+      tournament: one Tournament,
+      teams: set Team,
+  }
+  
+  sig Tournament{
+      creator: one Educator,
+      allowed_educators: set Educator,
+      battles: set Battle,
+      students: set Student
+  }
+\end{lstlisting}
 
 \subsection{Predicates}
+\begin{lstlisting}[language=alloy]
+pred CanCreateBattles[e : Educator, t:Tournament]{
+    e in t.allowed_educators
+}
+
+pred CreatedTournament[e : Educator, t:Tournament]{
+    t.creator = e
+}
+
+pred CanCloseTournament[e : Educator, t:Tournament]{
+    t.creator = e
+}
+
+pred CanGradeSolutions[e: Educator, b: Battle]{
+    e = b.creator
+}
+
+pred StudentInBattle[s: Student, b: Battle]{
+    some t: b.teams | s in t.team_mates
+}
+\end{lstlisting}
+
+\subsection{Facts}
+\begin{lstlisting}[language=alloy]
+fact CreatorIsAllowedEdcator{
+    all e: Educator | all t: Tournament | t.creator = e implies e in t.allowed_educators
+}
+
+fact BattleIsPartOfTournament{
+    all t: Tournament | all b: Battle | b.tournament = t iff b in t.battles
+}
+
+fact TeamIsPartOfBattle{
+    all t: Team | all b: Battle | t.battle = b iff t in b.teams
+}
+
+fact StudentInTeamHasToBeEnrolled{
+    all t: Team | all s: Student | s in t.team_mates implies s in t.battle.tournament.students
+}
+
+fact StudentCanOnlyBeInOneTeamPerBattle{
+	all disj t1,t2: Team | t1.battle = t2.battle implies no (t1.team_mates & t2.team_mates)
+}
+\end{lstlisting}
+
+\subsection{Assertions}
+\begin{lstlisting}[language=alloy]
+assert CreatorCanManageTournament{
+    all e: Educator | all t: Tournament | CreatedTournament[e,t] implies (CanCloseTournament[e,t] and CanCreateBattles[e,t])
+}
+
+assert NoCommonTeammatesInBattle{
+        all s: Student | all disj t1,t2: Team | (s in t1.team_mates and s in t2.team_mates) implies not (t1.battle = t2.battle)
+}
+\end{lstlisting}
+
+\subsection{Istance}
+\begin{center}
+  \includegraphics[width=\linewidth]{istance.png}
+ \captionof{figure}{[UC13] - Login of a User}
+\label{fig:uc13}
+\end{center}
 
 \newpage
 \section{Effort Spent}
