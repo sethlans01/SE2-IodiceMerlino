@@ -1083,7 +1083,9 @@ With the signatures we describe entities that are part of the system with their 
 \end{lstlisting}
 
 \subsection{Predicates}
-\begin{lstlisting}
+\begin{lstlisting}[
+  breaklines=true,
+  postbreak=\mbox{{$\hookrightarrow$}\space}]
 pred CanCreateBattles[e : Educator, t:Tournament]{
     e in t.allowed_educators
 }
@@ -1106,7 +1108,9 @@ pred StudentInBattle[s: Student, b: Battle]{
 \end{lstlisting}
 
 \subsection{Facts}
-\begin{lstlisting}
+\begin{lstlisting}[
+  breaklines=true,
+  postbreak=\mbox{{$\hookrightarrow$}\space}]
 fact CreatorIsAllowedEdcator{
     all e: Educator | all t: Tournament | t.creator = e implies e in t.allowed_educators
 }
@@ -1129,7 +1133,9 @@ fact StudentCanOnlyBeInOneTeamPerBattle{
 \end{lstlisting}
 
 \subsection{Assertions}
-\begin{lstlisting}
+\begin{lstlisting}[
+  breaklines=true,
+  postbreak=\mbox{{$\hookrightarrow$}\space}]
 assert CreatorCanManageTournament{
     all e: Educator | all t: Tournament | CreatedTournament[e,t] implies (CanCloseTournament[e,t] and CanCreateBattles[e,t])
 }
