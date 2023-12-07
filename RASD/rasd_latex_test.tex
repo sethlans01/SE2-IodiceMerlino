@@ -47,6 +47,8 @@ The exercise includes a brief textual description and a software project with bu
 \\\\
 Teams participating in a battle are expected to follow a test-first approach and develop a solution that passes the required tests. Groups deliver their solution to the platform before the deadline.
 At the end of the battle, the platform and the educators assign scores to groups, in order to create a competition rank.
+\\\\
+A Educator cannot be a student and vice versa.
 \subsubsection{World Phaenomena}
 Phenomena events that take place in the real world and that the machine cannot observe:\\\\
 \textbf{[W1]} Educator wants to create a tournament\\
@@ -624,7 +626,7 @@ Entry Condition & The Student is logged in the system, has enrolled in a tournam
 & 5- The Student ask the system for a list of all available students for this battle\\\
 & 7- The System return the list\\
 & 7- The Student select a student\\
-& 8- The System checks that the student is the team leader\
+& 8- The System checks that the student is the team leader\\
 & 9- The System checks that the invited student is not in a team for this battle and the team is not at maximum capacity\\
 & 10- The System sends the invite\\
 \hline
@@ -1057,7 +1059,7 @@ With alloy we can formally verify that the constraints of the system are coheren
 
 \subsection{Signatures}
 With the signatures we describe entities that are part of the system with their relationships.
-\begin{lstlisting}[language=alloy]
+\begin{lstlisting}
   sig Student{}
   sig Educator{}
   
@@ -1081,7 +1083,7 @@ With the signatures we describe entities that are part of the system with their 
 \end{lstlisting}
 
 \subsection{Predicates}
-\begin{lstlisting}[language=alloy]
+\begin{lstlisting}
 pred CanCreateBattles[e : Educator, t:Tournament]{
     e in t.allowed_educators
 }
@@ -1104,7 +1106,7 @@ pred StudentInBattle[s: Student, b: Battle]{
 \end{lstlisting}
 
 \subsection{Facts}
-\begin{lstlisting}[language=alloy]
+\begin{lstlisting}
 fact CreatorIsAllowedEdcator{
     all e: Educator | all t: Tournament | t.creator = e implies e in t.allowed_educators
 }
@@ -1127,7 +1129,7 @@ fact StudentCanOnlyBeInOneTeamPerBattle{
 \end{lstlisting}
 
 \subsection{Assertions}
-\begin{lstlisting}[language=alloy]
+\begin{lstlisting}
 assert CreatorCanManageTournament{
     all e: Educator | all t: Tournament | CreatedTournament[e,t] implies (CanCloseTournament[e,t] and CanCreateBattles[e,t])
 }
@@ -1139,8 +1141,8 @@ assert NoCommonTeammatesInBattle{
 
 \subsection{Istance}
 \begin{center}
-  \includegraphics[width=\linewidth]{istance.png}
- \captionof{figure}{[UC13] - Login of a User}
+  \includegraphics[width=0.25\linewidth]{istance.png}
+ \captionof{figure}{example of valid instance of the system}
 \label{fig:uc13}
 \end{center}
 
