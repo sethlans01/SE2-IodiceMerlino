@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  7 DEC 2023 11:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  15 DEC 2023 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,11 +450,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
  []
 
 [5] [6] [7]
-<./images/image17.png, id=382, 803.0pt x 576.1525pt>
-File: ./images/image17.png Graphic file (type png)
-<use ./images/image17.png>
-Package pdftex.def Info: ./images/image17.png  used on input line 197.
-(pdftex.def)             Requested size: 469.75502pt x 337.06104pt.
+<./images/DomainClass.jpg, id=382, 832.10875pt x 602.25pt>
+File: ./images/DomainClass.jpg Graphic file (type jpg)
+<use ./images/DomainClass.jpg>
+Package pdftex.def Info: ./images/DomainClass.jpg  used on input line 197.
+(pdftex.def)             Requested size: 469.75502pt x 339.99619pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -462,7 +462,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [8]
-<./images/image4.png, id=393, 367.3725pt x 413.545pt>
+<./images/image4.png, id=392, 367.3725pt x 413.545pt>
 File: ./images/image4.png Graphic file (type png)
 <use ./images/image4.png>
 Package pdftex.def Info: ./images/image4.png  used on input line 211.
@@ -473,8 +473,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 212.
 See the caption package documentation for explanation.
 
-[9 <./images/image17.png>]
-<./images/image10.png, id=400, 322.20375pt x 413.545pt>
+[9 <./images/DomainClass.jpg>]
+<./images/image10.png, id=398, 322.20375pt x 413.545pt>
 File: ./images/image10.png Graphic file (type png)
 <use ./images/image10.png>
 Package pdftex.def Info: ./images/image10.png  used on input line 216.
@@ -485,7 +485,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 217.
 See the caption package documentation for explanation.
 
-<./images/image6.png, id=401, 500.87125pt x 541.02126pt>
+<./images/image6.png, id=399, 500.87125pt x 541.02126pt>
 File: ./images/image6.png Graphic file (type png)
 <use ./images/image6.png>
 Package pdftex.def Info: ./images/image6.png  used on input line 221.
@@ -496,7 +496,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [10 <./images/image4.png (PNG copy)> <./images/image10.png (PNG copy)>]
-<./images/image15.png, id=408, 708.6475pt x 413.545pt>
+<./images/image15.png, id=406, 708.6475pt x 413.545pt>
 File: ./images/image15.png Graphic file (type png)
 <use ./images/image15.png>
 Package pdftex.def Info: ./images/image15.png  used on input line 226.
@@ -538,18 +538,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--365
 LaTeX Warning: Reference `Formal Analysis' on page 15 undefined on input line 3
 67.
 
-<./images/image9.png, id=429, 790.955pt x 702.625pt>
-File: ./images/image9.png Graphic file (type png)
-<use ./images/image9.png>
-Package pdftex.def Info: ./images/image9.png  used on input line 370.
-(pdftex.def)             Requested size: 375.80544pt x 333.8361pt.
+<./images/EducatorUseCase.jpg, id=427, 823.075pt x 732.7375pt>
+File: ./images/EducatorUseCase.jpg Graphic file (type jpg)
+<use ./images/EducatorUseCase.jpg>
+Package pdftex.def Info: ./images/EducatorUseCase.jpg  used on input line 370.
+(pdftex.def)             Requested size: 375.80544pt x 334.55887pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 371.
 See the caption package documentation for explanation.
 
 [15]
-<./images/image19.png, id=434, 874.26625pt x 462.72874pt>
+<./images/image19.png, id=432, 874.26625pt x 462.72874pt>
 File: ./images/image19.png Graphic file (type png)
 <use ./images/image19.png>
 Package pdftex.def Info: ./images/image19.png  used on input line 376.
@@ -560,7 +560,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 377.
 See the caption package documentation for explanation.
 
-[16 <./images/image9.png> <./images/image19.png (PNG copy)>]
+[16 <./images/EducatorUseCase.jpg> <./images/image19.png (PNG copy)>]
 Overfull \hbox (27.2791pt too wide) in paragraph at lines 385--409
  [] 
  []
@@ -636,73 +636,73 @@ Overfull \hbox (27.2791pt too wide) in paragraph at lines 715--740
  []
 
 [21]
-<./images/image12.png, id=476, 2006.49625pt x 1205.50375pt>
-File: ./images/image12.png Graphic file (type png)
-<use ./images/image12.png>
-Package pdftex.def Info: ./images/image12.png  used on input line 745.
-(pdftex.def)             Requested size: 469.75502pt x 282.22655pt.
+<./images/uc1.jpg, id=473, 1061.9675pt x 644.4075pt>
+File: ./images/uc1.jpg Graphic file (type jpg)
+<use ./images/uc1.jpg>
+Package pdftex.def Info: ./images/uc1.jpg  used on input line 745.
+(pdftex.def)             Requested size: 469.75502pt x 285.05443pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 746.
 See the caption package documentation for explanation.
 
-<./images/image8.png, id=477, 2006.49625pt x 1021.8175pt>
-File: ./images/image8.png Graphic file (type png)
-<use ./images/image8.png>
-Package pdftex.def Info: ./images/image8.png  used on input line 751.
-(pdftex.def)             Requested size: 469.75502pt x 239.22282pt.
+<./images/uc2.jpg, id=474, 1061.9675pt x 556.0775pt>
+File: ./images/uc2.jpg Graphic file (type jpg)
+<use ./images/uc2.jpg>
+Package pdftex.def Info: ./images/uc2.jpg  used on input line 751.
+(pdftex.def)             Requested size: 469.75502pt x 245.98155pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 752.
 See the caption package documentation for explanation.
 
-<./images/image2.png, id=478, 2006.49625pt x 1615.03375pt>
-File: ./images/image2.png Graphic file (type png)
-<use ./images/image2.png>
-Package pdftex.def Info: ./images/image2.png  used on input line 757.
-(pdftex.def)             Requested size: 469.75502pt x 378.10367pt.
+<./images/uc3.jpg, id=475, 1061.9675pt x 861.2175pt>
+File: ./images/uc3.jpg Graphic file (type jpg)
+<use ./images/uc3.jpg>
+Package pdftex.def Info: ./images/uc3.jpg  used on input line 757.
+(pdftex.def)             Requested size: 469.75502pt x 380.9606pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 758.
 See the caption package documentation for explanation.
 
-[22 <./images/image12.png> <./images/image8.png>]
-<./images/image16.png, id=487, 2006.49625pt x 1147.28625pt>
-File: ./images/image16.png Graphic file (type png)
-<use ./images/image16.png>
-Package pdftex.def Info: ./images/image16.png  used on input line 763.
-(pdftex.def)             Requested size: 469.75502pt x 268.59694pt.
+[22 <./images/uc1.jpg> <./images/uc2.jpg>]
+<./images/uc4.jpg, id=482, 1061.9675pt x 620.3175pt>
+File: ./images/uc4.jpg Graphic file (type jpg)
+<use ./images/uc4.jpg>
+Package pdftex.def Info: ./images/uc4.jpg  used on input line 763.
+(pdftex.def)             Requested size: 469.75502pt x 274.3982pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 764.
 See the caption package documentation for explanation.
 
-[23 <./images/image2.png>]
-<./images/image5.png, id=494, 2006.49625pt x 1021.8175pt>
-File: ./images/image5.png Graphic file (type png)
-<use ./images/image5.png>
-Package pdftex.def Info: ./images/image5.png  used on input line 769.
-(pdftex.def)             Requested size: 469.75502pt x 239.22282pt.
+[23 <./images/uc3.jpg>]
+<./images/uc5.jpg, id=488, 1061.9675pt x 556.0775pt>
+File: ./images/uc5.jpg Graphic file (type jpg)
+<use ./images/uc5.jpg>
+Package pdftex.def Info: ./images/uc5.jpg  used on input line 769.
+(pdftex.def)             Requested size: 469.75502pt x 245.98155pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 770.
 See the caption package documentation for explanation.
 
-<./images/image14.png, id=495, 762.85pt x 515.9275pt>
-File: ./images/image14.png Graphic file (type png)
-<use ./images/image14.png>
-Package pdftex.def Info: ./images/image14.png  used on input line 775.
-(pdftex.def)             Requested size: 469.75502pt x 317.69896pt.
+<./images/uc6.jpg, id=489, 805.0075pt x 556.0775pt>
+File: ./images/uc6.jpg Graphic file (type jpg)
+<use ./images/uc6.jpg>
+Package pdftex.def Info: ./images/uc6.jpg  used on input line 775.
+(pdftex.def)             Requested size: 469.75502pt x 324.4937pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 776.
 See the caption package documentation for explanation.
 
-[24 <./images/image16.png> <./images/image5.png>]
-<./images/uc7.jpg, id=504, 821.0675pt x 515.9275pt>
+[24 <./images/uc4.jpg> <./images/uc5.jpg>]
+<./images/uc7.jpg, id=496, 821.0675pt x 515.9275pt>
 File: ./images/uc7.jpg Graphic file (type jpg)
 <use ./images/uc7.jpg>
 Package pdftex.def Info: ./images/uc7.jpg  used on input line 780.
@@ -713,8 +713,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 781.
 See the caption package documentation for explanation.
 
-[25 <./images/image14.png> <./images/uc7.jpg>]
-<./images/uc8.jpg, id=512, 1102.1175pt x 700.6175pt>
+[25 <./images/uc6.jpg> <./images/uc7.jpg>]
+<./images/uc8.jpg, id=503, 1102.1175pt x 700.6175pt>
 File: ./images/uc8.jpg Graphic file (type jpg)
 <use ./images/uc8.jpg>
 Package pdftex.def Info: ./images/uc8.jpg  used on input line 786.
@@ -725,7 +725,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 787.
 See the caption package documentation for explanation.
 
-<./images/uc9.jpg, id=513, 917.4275pt x 692.5875pt>
+<./images/uc9.jpg, id=504, 917.4275pt x 692.5875pt>
 File: ./images/uc9.jpg Graphic file (type jpg)
 <use ./images/uc9.jpg>
 Package pdftex.def Info: ./images/uc9.jpg  used on input line 792.
@@ -736,7 +736,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [26 <./images/uc8.jpg>]
-<./images/uc10.jpg, id=520, 523.9575pt x 363.3575pt>
+<./images/uc10.jpg, id=511, 523.9575pt x 363.3575pt>
 File: ./images/uc10.jpg Graphic file (type jpg)
 <use ./images/uc10.jpg>
 Package pdftex.def Info: ./images/uc10.jpg  used on input line 798.
@@ -748,7 +748,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [27 <./images/uc9.jpg>]
-<./images/uc11.jpg, id=526, 1069.9975pt x 507.8975pt>
+<./images/uc11.jpg, id=517, 1069.9975pt x 507.8975pt>
 File: ./images/uc11.jpg Graphic file (type jpg)
 <use ./images/uc11.jpg>
 Package pdftex.def Info: ./images/uc11.jpg  used on input line 804.
@@ -759,7 +759,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 805.
 See the caption package documentation for explanation.
 
-<./images/uc12.jpg, id=527, 668.4975pt x 339.2675pt>
+<./images/uc12.jpg, id=518, 668.4975pt x 339.2675pt>
 File: ./images/uc12.jpg Graphic file (type jpg)
 <use ./images/uc12.jpg>
 Package pdftex.def Info: ./images/uc12.jpg  used on input line 810.
@@ -770,7 +770,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [28 <./images/uc10.jpg> <./images/uc11.jpg>]
-<./images/uc13.jpg, id=534, 732.7375pt x 395.4775pt>
+<./images/uc13.jpg, id=525, 732.7375pt x 395.4775pt>
 File: ./images/uc13.jpg Graphic file (type jpg)
 <use ./images/uc13.jpg>
 Package pdftex.def Info: ./images/uc13.jpg  used on input line 816.
@@ -792,7 +792,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1063.
 
  [36]
-<./images/istance.png, id=622, 310.91156pt x 1586.92876pt>
+<./images/istance.png, id=613, 310.91156pt x 1586.92876pt>
 File: ./images/istance.png Graphic file (type png)
 <use ./images/istance.png>
 Package pdftex.def Info: ./images/istance.png  used on input line 1150.
@@ -814,10 +814,10 @@ Package rerunfilecheck Info: File `rasd_latex_test.out' has not changed.
 (rerunfilecheck)             Checksum: B2ECC418FE2D2A02081B13AD13DC18AE;9529.
  ) 
 Here is how much of TeX's memory you used:
- 12213 strings out of 476025
- 194337 string characters out of 5791510
+ 12214 strings out of 476025
+ 194279 string characters out of 5791510
  2035388 words of memory out of 5000000
- 32292 multiletter control sequences out of 15000+600000
+ 32293 multiletter control sequences out of 15000+600000
  517223 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,76p,769b,1880s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -829,9 +829,9 @@ fonts/cm/cmr12.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></app/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></app/texlive/texm
 f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on rasd_latex_test.pdf (40 pages, 1893016 bytes).
+Output written on rasd_latex_test.pdf (40 pages, 1284926 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
+ 759 PDF objects out of 1000 (max. 8388607)
  670 compressed objects within 7 object streams
  237 named destinations out of 1000 (max. 500000)
  626 words of extra memory for PDF output out of 10000 (max. 10000000)
