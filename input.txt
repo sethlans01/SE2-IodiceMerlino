@@ -1,0 +1,34 @@
+selectTournament(tournamentID)
+Rest API call used to get the  tournament view
+Param: tournamentID the ID of the tournament
+Returns: all data needed to build the tournament view if successful 
+
+selectBattle(battleID)
+Rest API call used to get the battle 
+Param: battleID the ID of the battle
+Returns: all data needed to build the battle view if successful 
+
+createTeam(teamInfo)
+Rest API call used create a new team for a battle
+Param: teamInfo the info about the new team
+Returns: 200 if successful 
+
+getInvites(battleID)
+Rest API call used to get the invites for the specified battle
+Param: battleID the ID of the battle
+Returns: list of invites and their id if successful 
+
+acceptInvite(inviteID)
+Rest API call used to accept an invite to a team
+Param: inviteID the id of the invite
+Returns: 200 if successful
+
+getAvailableStudents(battleID)
+Rest API call used to get the available students for the specified battle
+Param: battleID the ID of the battle
+Returns: list of students usernames and their id if successful
+
+inviteStudent(newInviteInfo)
+Rest API call used to invite a new student
+Param: newInviteInfo info regarding the student being invited and the battle
+Returns: 200 if successful
