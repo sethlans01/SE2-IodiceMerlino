@@ -30,14 +30,59 @@
 \contentsline {subsubsection}{\numberline {2.5.1}Web Server}{19}{subsubsection.2.5.1}%
 \contentsline {subsubsection}{\numberline {2.5.2}Http Manager}{19}{subsubsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.6}Selected architectural Styles and patterns}{20}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Other design decisions}{20}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Availability}{20}{subsubsection.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.7.2}User Session}{20}{subsubsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.3}Notifications}{20}{subsubsection.2.7.3}%
-\contentsline {subsubsection}{\numberline {2.7.4}Data Storage}{20}{subsubsection.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.6.1}4-tier Architecture}{20}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Model View Controller pattern}{20}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Facade pattern}{21}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Mediator pattern}{21}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7}Other design decisions}{21}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Availability}{21}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}User Session}{21}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Notifications}{21}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}Data Storage}{21}{subsubsection.2.7.4}%
 \contentsline {subsubsection}{\numberline {2.7.5}Rust backend}{21}{subsubsection.2.7.5}%
 \contentsline {section}{\numberline {3}User Interface Design}{22}{section.3}%
 \contentsline {section}{\numberline {4}Requirement traceability}{23}{section.4}%
-\contentsline {section}{\numberline {5}Implementation, Integration and Test Plan}{24}{section.5}%
-\contentsline {section}{\numberline {6}Effort Spent}{25}{section.6}%
-\contentsline {section}{\numberline {7}References}{26}{section.7}%
+\contentsline {subsection}{\numberline {4.1}[R1]}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}[R2]}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}[R3]}{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}[R4]}{23}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}[R5]}{24}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}[R6]}{24}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}[R7]}{24}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}[R8]}{24}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}[R9]}{25}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}[R10]}{25}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}[R11]}{25}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}[R12]}{26}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}[R13]}{26}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}[R14]}{26}{subsection.4.14}%
+\contentsline {subsection}{\numberline {4.15}[R15]}{27}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}[R16]}{27}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}[R17]}{27}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}[R18]}{27}{subsection.4.18}%
+\contentsline {subsection}{\numberline {4.19}[R19]}{28}{subsection.4.19}%
+\contentsline {subsection}{\numberline {4.20}[R20]}{28}{subsection.4.20}%
+\contentsline {subsection}{\numberline {4.21}[R21]}{28}{subsection.4.21}%
+\contentsline {subsection}{\numberline {4.22}[R22]}{28}{subsection.4.22}%
+\contentsline {subsection}{\numberline {4.23}[R23]}{29}{subsection.4.23}%
+\contentsline {subsection}{\numberline {4.24}[R24]}{29}{subsection.4.24}%
+\contentsline {subsection}{\numberline {4.25}[R25]}{29}{subsection.4.25}%
+\contentsline {subsection}{\numberline {4.26}[R26]}{29}{subsection.4.26}%
+\contentsline {subsection}{\numberline {4.27}[R27]}{30}{subsection.4.27}%
+\contentsline {subsection}{\numberline {4.28}[R28]}{30}{subsection.4.28}%
+\contentsline {subsection}{\numberline {4.29}[R29]}{30}{subsection.4.29}%
+\contentsline {subsection}{\numberline {4.30}[R30]}{30}{subsection.4.30}%
+\contentsline {subsection}{\numberline {4.31}[R31]}{30}{subsection.4.31}%
+\contentsline {subsection}{\numberline {4.32}[R32]}{31}{subsection.4.32}%
+\contentsline {subsection}{\numberline {4.33}[R33]}{31}{subsection.4.33}%
+\contentsline {subsection}{\numberline {4.34}[R34]}{31}{subsection.4.34}%
+\contentsline {subsection}{\numberline {4.35}[R35]}{31}{subsection.4.35}%
+\contentsline {subsection}{\numberline {4.36}[R36]}{32}{subsection.4.36}%
+\contentsline {subsection}{\numberline {4.37}[R37]}{32}{subsection.4.37}%
+\contentsline {subsection}{\numberline {4.38}[R38]}{32}{subsection.4.38}%
+\contentsline {subsection}{\numberline {4.39}[R39]}{32}{subsection.4.39}%
+\contentsline {subsection}{\numberline {4.40}[R40]}{33}{subsection.4.40}%
+\contentsline {subsection}{\numberline {4.41}[R41]}{33}{subsection.4.41}%
+\contentsline {section}{\numberline {5}Implementation, Integration and Test Plan}{34}{section.5}%
+\contentsline {section}{\numberline {6}Effort Spent}{35}{section.6}%
+\contentsline {section}{\numberline {7}References}{36}{section.7}%

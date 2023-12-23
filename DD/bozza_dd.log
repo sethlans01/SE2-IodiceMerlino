@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  23 DEC 2023 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  23 DEC 2023 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,7 +406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
  []
 
 [4] [5]
-<./images/hlv1.png, id=256, 654.445pt x 201.75375pt>
+<./images/hlv1.png, id=482, 654.445pt x 201.75375pt>
 File: ./images/hlv1.png Graphic file (type png)
 <use ./images/hlv1.png>
 Package pdftex.def Info: ./images/hlv1.png  used on input line 134.
@@ -432,7 +432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
-<./images/hlv2.png, id=258, 709.65125pt x 325.215pt>
+<./images/hlv2.png, id=484, 709.65125pt x 325.215pt>
 File: ./images/hlv2.png Graphic file (type png)
 <use ./images/hlv2.png>
 Package pdftex.def Info: ./images/hlv2.png  used on input line 148.
@@ -448,7 +448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--160
  []
 
 [7 <./images/hlv2.png>]
-<./images/cv3.jpg, id=272, 685.05937pt x 1484.54625pt>
+<./images/cv3.jpg, id=499, 685.05937pt x 1484.54625pt>
 File: ./images/cv3.jpg Graphic file (type jpg)
 <use ./images/cv3.jpg>
 Package pdftex.def Info: ./images/cv3.jpg  used on input line 162.
@@ -460,7 +460,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [8 <./images/cv3.jpg>] [9]
-<./images/dv.jpg, id=282, 1310.8975pt x 1551.7975pt>
+<./images/dv.jpg, id=509, 1310.8975pt x 1551.7975pt>
 File: ./images/dv.jpg Graphic file (type jpg)
 <use ./images/dv.jpg>
 Package pdftex.def Info: ./images/dv.jpg  used on input line 191.
@@ -472,7 +472,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [10 <./images/dv.jpg>] [11]
-<./images/uc7.jpg, id=293, 1639.62563pt x 541.27219pt>
+<./images/uc7.jpg, id=519, 1639.62563pt x 541.27219pt>
 File: ./images/uc7.jpg Graphic file (type jpg)
 <use ./images/uc7.jpg>
 Package pdftex.def Info: ./images/uc7.jpg  used on input line 207.
@@ -484,7 +484,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [12 <./images/uc7.jpg>]
-<./images/uc8.jpg, id=299, 1645.64813pt x 1037.37563pt>
+<./images/uc8.jpg, id=525, 1645.64813pt x 1037.37563pt>
 File: ./images/uc8.jpg Graphic file (type jpg)
 <use ./images/uc8.jpg>
 Package pdftex.def Info: ./images/uc8.jpg  used on input line 214.
@@ -496,7 +496,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [13 <./images/uc8.jpg>]
-<./images/uc9.jpg, id=306, 1513.15312pt x 818.30719pt>
+<./images/uc9.jpg, id=532, 1513.15312pt x 818.30719pt>
 File: ./images/uc9.jpg Graphic file (type jpg)
 <use ./images/uc9.jpg>
 Package pdftex.def Info: ./images/uc9.jpg  used on input line 221.
@@ -508,7 +508,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [14 <./images/uc9.jpg>]
-<./images/uc10.jpg, id=312, 1260.20813pt x 362.85562pt>
+<./images/uc10.jpg, id=538, 1260.20813pt x 362.85562pt>
 File: ./images/uc10.jpg Graphic file (type jpg)
 <use ./images/uc10.jpg>
 Package pdftex.def Info: ./images/uc10.jpg  used on input line 228.
@@ -520,7 +520,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [15 <./images/uc10.jpg>]
-<./images/uc11.jpg, id=318, 1748.03062pt x 578.91281pt>
+<./images/uc11.jpg, id=544, 1748.03062pt x 578.91281pt>
 File: ./images/uc11.jpg Graphic file (type jpg)
 <use ./images/uc11.jpg>
 Package pdftex.def Info: ./images/uc11.jpg  used on input line 235.
@@ -532,7 +532,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [16 <./images/uc11.jpg>]
-<./images/uc12.jpg, id=324, 826.58812pt x 773.89125pt>
+<./images/uc12.jpg, id=550, 826.58812pt x 773.89125pt>
 File: ./images/uc12.jpg Graphic file (type jpg)
 <use ./images/uc12.jpg>
 Package pdftex.def Info: ./images/uc12.jpg  used on input line 242.
@@ -544,7 +544,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [17 <./images/uc12.jpg>]
-<./images/uc13.jpg, id=330, 1464.97313pt x 615.80063pt>
+<./images/uc13.jpg, id=556, 1464.97313pt x 615.80063pt>
 File: ./images/uc13.jpg Graphic file (type jpg)
 <use ./images/uc13.jpg>
 Package pdftex.def Info: ./images/uc13.jpg  used on input line 249.
@@ -625,18 +625,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--327
 
  []
 
-[19] [20] [21] [22] [23] [24] [25] [26] (./bozza_dd.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+[19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33]
+[34] [35] [36] (./bozza_dd.aux)
 Package rerunfilecheck Info: File `bozza_dd.out' has not changed.
-(rerunfilecheck)             Checksum: 544726497B7169325F7FADD5FEC6B0C8;6453.
+(rerunfilecheck)             Checksum: B42509DD03D26FA4377BAE08019080A0;10523.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 476025
- 187247 string characters out of 5791510
- 1872388 words of memory out of 5000000
- 31901 multiletter control sequences out of 15000+600000
+ 11761 strings out of 476025
+ 188771 string characters out of 5791510
+ 1873388 words of memory out of 5000000
+ 31946 multiletter control sequences out of 15000+600000
  517223 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,76p,758b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -646,10 +644,10 @@ st/fonts/type1/public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></app/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr17.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on bozza_dd.pdf (26 pages, 1737410 bytes).
+Output written on bozza_dd.pdf (36 pages, 1753734 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 400 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 632 compressed objects within 7 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 760 words of extra memory for PDF output out of 10000 (max. 10000000)
 
