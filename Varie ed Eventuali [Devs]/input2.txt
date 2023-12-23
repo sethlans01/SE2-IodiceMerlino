@@ -1,0 +1,303 @@
+\textbf{[R1]} The system allows Students to log in via GitHub.\\
+CodeKata Web App
+Web Server
+Http Manager
+Authentication Manager
+GitHub Manager
+Model
+Database
+
+\textbf{[R2]} The system allows Educators to log in via GitHub.\\
+CodeKata Web App
+Web Server
+Http Manager
+Authentication Manager
+GitHub Manager
+Model
+Database
+
+\textbf{[R3]} The system allows Educators to create a tournament.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R4]} The system allows Educators to view a list of only tournaments they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R5]} The system allows Educators to add other Educators to a tournament they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R6]} The system allows Educators to view a list of all Educators that manage the tournament they are managing.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R7]} The system allows Educators to end a tournament they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+\textbf{[R8]} The system allows Educators to view a list of Students that are enrolled in a tournament they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R9]} The system allows Educators to create a battle in a tournament they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R10]} The system allows Educators to view a list of teams that are participating to a battle they have created.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R11]} The system allows Educators to view a list of submitted solutions for a battle they have created.\\
+CodeKata Web App
+Web Server
+Http Manager
+Authentication Manager
+GitHub Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R12]} The system allows Educators to view the repository of each solution submitted to a battle they have created.\\
+CodeKata Web App
+Web Server
+Http Manager
+Authentication Manager
+GitHub Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R13]} The system allows Educators to grade a solution for a battle they have created, after the deadline of a battle.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Submission Evaluation Manager
+Model
+Database
+
+\textbf{[R14]} The system allows Educators to see the grade given by the automated tests to a solution of a battle.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Submission Evaluation Manager
+Model
+Database
+
+\textbf{[R15]} The system allows Educators to view the rank scoreboard of a tournament they manage.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Submission Evaluation Manager
+Model
+Database
+
+\textbf{[R16]} The system allows Students to view a list of all available tournaments.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R17]} The system allows Students to join a tournament.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R18]} The system allows Students to view a list of tournaments they are enrolled in.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Model
+Database
+
+\textbf{[R19]} The system allows Students to view a list of all available battles of a given tournament.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R20]} The system allows Students to create a team for a battle.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R21]} The system allows Team Leaders to invite other students to their team.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle Manager
+Model
+Database
+
+\textbf{[R22]} The system allows Students to view a list of invitations received.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle manager
+Model 
+Database
+\textbf{[R23]} The system allows Students to accept an invite.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle manager
+Model 
+Database
+\textbf{[R24]} The system allows Students to decline an invite.\\
+CodeKata Web App
+\textbf{[R25]} The system allows Students to view a list of battles they have joined, given a tournament.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament manager
+Model 
+Database
+\textbf{[R26]} The system allows Students to view the description of a battle they are enrolled into.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle manager
+Model
+Database
+\textbf{[R27]} The system allows Students to view the repository of a battle they are enrolled into.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle manager
+Model
+Database
+\textbf{[R28]} The system allows Students to view the score of the solution submitted, given a battle, and after the solution has been graded.\\
+CodeKata Web App
+Web Server
+Http Manager
+Battle manager
+Model
+Database
+\textbf{[R29]} The system allows Students to view the rank scoreboard of a tournament they are enrolled in.\\
+CodeKata Web App
+Web Server
+Http Manager
+Tournament manager
+Model
+Database
+\textbf{[R30]} The system runs GitHub Actions on battles’ repository.\\
+Github Manager
+\textbf{[R31]} The system detects when a new version of the main branch is available.\\
+CodeKata Web App
+Web Server
+Http Manager
+\textbf{[R32]} System notifies student they have been invited to a team.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R33]} System assign automatic grading.\\
+CodeKata Web App
+Web Server
+Http Manager
+Submission Evaluation manager
+Github Manager
+Model
+Database
+\textbf{[R34]} System notifies students a new battle is available.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R35]} System notifies students a new tournament is available. \\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R36]} System notifies a tournament has been closed.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R37]} System notifies a student that a battle has ended.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R38]} System notifies a team their solution has been graded.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R39]} System notifies educators that a new submission is ready to be graded.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R40]} System notifies students that the student they have invited to their team has accepted/rejected the invite.\\
+CodeKata Web App
+Web Server
+Http Manager
+Notification manager
+Model
+Database
+\textbf{[R41]} System is able to fork the educator’s repository.\\
+Github manager
+Model
+Database

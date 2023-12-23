@@ -204,11 +204,54 @@ Further details about the elements in the graph are provided in the following.
 \newpage
 \subsection{Runtime views}
 \begin{center}
-    \includegraphics[width=\linewidth]{uc7.jpg}
+    \includegraphics[angle=90,width=0.4\linewidth]{uc7.jpg}
    \captionof{figure}{UC7}
   \label{fig:uc7}
 \end{center}
 
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=0.8\linewidth]{uc8.jpg}
+   \captionof{figure}{UC8}
+  \label{fig:uc8}
+\end{center}
+
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=0.7\linewidth]{uc9.jpg}
+   \captionof{figure}{UC9}
+  \label{fig:uc9}
+\end{center}
+
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=0.37\linewidth]{uc10.jpg}
+   \captionof{figure}{UC10}
+  \label{fig:uc10}
+\end{center}
+
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=0.4\linewidth]{uc11.jpg}
+   \captionof{figure}{UC11}
+  \label{fig:uc11}
+\end{center}
+
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=\linewidth]{uc12.jpg}
+   \captionof{figure}{UC12}
+  \label{fig:uc12}
+\end{center}
+
+\newpage
+\begin{center}
+    \includegraphics[angle=90,width=0.5\linewidth]{uc13.jpg}
+   \captionof{figure}{UC13}
+  \label{fig:uc13}
+\end{center}
+
+\newpage
 \subsection{Component interfaces}
 \subsubsection{Web Server}
 \textbf{selectTournament(tournamentID)}\\
@@ -285,7 +328,31 @@ Rest API call used to invite a new student\\
 
 
 \subsection{Selected architectural Styles and patterns}
+\subsubsection{4-tier Architecture}
+CKB will be built over a 4-tier architecture which provides many benefits thanks to the modularization of the system in three independent layers (or tiers):
+Presentation tier: Top-level tier including the user’s interface. Its main function is to rearrange the received data from the web and application tiers and present them to the user in a more intuitive and comprehensible manner.
+Web Server tier: this tier receives requests via HTTP from the user’s client and redirects them to an application server that is available. After the web server receives the response from the application tier, it will forward the response message to the user. Moreover, this tier is going to have a caching funcion (it will send static files to the user, when required) and a load balancing function: the requests received are sent to a server that has enough resources to elaborate it.
+Application tier: It includes the business logic of the application, that is the logic according to which the application takes decisions and performs calculations. Moreover, it passes and processes data between the two surrounding layers.
+ Data tier: It includes the Database system and provides an API, to the application tier, for accessing and managing the data stored in the DB
+Adopting this type of architecture guarantees a higher flexibility by allowing at first to develop and then to update a specific part of the system apart from the others. Besides, the middle tiers between client and data server ensures a better protection of the stored data. In fact the information is accessed through the application layer instead of being accessed directly by the client.
+\subsubsection{Model View Controller pattern}
+For implementing the web application, that allows the user to access all the functionalities offered by CKB, was chosen to follow the Model-View-Controller pattern (MVC pattern). It includes three main components:
+\begin{itemize}
+\item Model: contains the application's data and provides methods for its manipulation
+\item View: it contains all the different possible visual representations of the data
+\item Controller: sits between the model and the view. Upon the occurrence of events ( for
+example the pression of a button) execute a predefined reaction which may include
+some operations on the model that are then reflected on the view
+\end{itemize}
 
+The distribution of tasks between these three elements translates into an increased decoupling of the components which leads to a series of benefits such as reusability, simplicity of implementation, etc.
+\subsubsection{Facade pattern}
+The facade pattern is used in the implementation of the Http Manager component to hide the complexity of the application server to the client applications to which is provided a simpler interface. This solution ulteriorly increases the decoupling of the various components of our system; in particular between the client applications and application servers.
+\subsubsection{Mediator pattern}
+The mediator pattern is a behavioral pattern used to reduce coupling between modules willing to communicate with each other. The mediator component sits in between two or more objects and encapsulates how such objects communicate; this way not requiring them to know implementation details about each other. In our system there is one mediator:
+\begin{itemize}
+\item GitHub Manager acts as a mediator linking the internal components of the application server with the API provided by GitHub. This solution guarantees a greater flexibility of the system which can adapt to a change of the GitHub’s API by simply modifying the MapsManager.
+\end{itemize}
 \subsection{Other design decisions}
 \subsubsection{Availability}
 Load balancing and replication are concepts that have been introduced in the system to
@@ -312,7 +379,412 @@ The rust backend allows the system to handle high ammounts of requests consuming
 
 \newpage
 \section{Requirement traceability}
-
+\subsection{[R1]}
+\textbf{ The system allows Students to log in via GitHub.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R2]}
+\textbf{ The system allows Educators to log in via GitHub.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R3]}
+\textbf{ The system allows Educators to create a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R4]}
+\textbf{ The system allows Educators to view a list of only tournaments they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R5]}
+\textbf{ The system allows Educators to add other Educators to a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R6]}
+\textbf{ The system allows Educators to view a list of all Educators that manage the tournament they are managing.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R7]}
+\textbf{ The system allows Educators to end a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R8]}
+\textbf{ The system allows Educators to view a list of Students that are enrolled in a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R9]}
+\textbf{ The system allows Educators to create a battle in a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R10]}
+\textbf{ The system allows Educators to view a list of teams that are participating to a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R11]}
+\textbf{ The system allows Educators to view a list of submitted solutions for a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R12]}
+\textbf{ The system allows Educators to view the repository of each solution submitted to a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R13]}
+\textbf{ The system allows Educators to grade a solution for a battle they have created, after the deadline of a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R14]}
+\textbf{ The system allows Educators to see the grade given by the automated tests to a solution of a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R15]}
+\textbf{ The system allows Educators to view the rank scoreboard of a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R16]}
+\textbf{ The system allows Students to view a list of all available tournaments.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R17]}
+\textbf{ The system allows Students to join a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R18]}
+\textbf{ The system allows Students to view a list of tournaments they are enrolled in.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R19]}
+\textbf{ The system allows Students to view a list of all available battles of a given tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R20]}
+\textbf{ The system allows Students to create a team for a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R21]}
+\textbf{ The system allows Team Leaders to invite other students to their team.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R22]}
+\textbf{ The system allows Students to view a list of invitations received.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R23]}
+\textbf{ The system allows Students to accept an invite.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R24]}
+\textbf{ The system allows Students to decline an invite.}
+\begin{itemize}
+\item CodeKata Web App
+\end{itemize}
+\subsection{[R25]}
+\textbf{ The system allows Students to view a list of battles they have joined, given a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R26]}
+\textbf{ The system allows Students to view the description of a battle they are enrolled into.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R27]}
+\textbf{ The system allows Students to view the repository of a battle they are enrolled into.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R28]}
+\textbf{ The system allows Students to view the score of the solution submitted, given a battle, and after the solution has been graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R29]}
+\textbf{ The system allows Students to view the rank scoreboard of a tournament they are enrolled in.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R30]}
+\textbf{ The system runs GitHub Actions on battles’ repository.}
+\begin{itemize}
+\item Github Manager
+\end{itemize}
+\subsection{[R31]}
+\textbf{ The system detects when a new version of the main branch is available.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\end{itemize}
+\subsection{[R32]}
+\textbf{ System notifies student they have been invited to a team.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R33]}
+\textbf{ System assign automatic grading.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Submission Evaluation manager
+\item Github Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R34]}
+\textbf{ System notifies students a new battle is available.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R35]}
+\textbf{ System notifies students a new tournament is available. }
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R36]}
+\textbf{ System notifies a tournament has been closed.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R37]}
+\textbf{ System notifies a student that a battle has ended.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R38]}
+\textbf{ System notifies a team their solution has been graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R39]}
+\textbf{ System notifies educators that a new submission is ready to be graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R40]}
+\textbf{ System notifies students that the student they have invited to their team has accepted/rejected the invite.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R41]}
+\textbf{ System is able to fork the educator’s repository.}
+\begin{itemize}
+\item Github manager
+\item Model
+\item Database
+\end{itemize}
 
 \newpage
 \section{Implementation, Integration and Test Plan}
@@ -322,10 +794,10 @@ The rust backend allows the system to handle high ammounts of requests consuming
 \begin{center}
 \begin{tabular}{||l|c|c|c|c|c||}
 \hline
-Merlino Lorenzo & 2h & 10h & -h & -h & -h
+Merlino Lorenzo & 2h & 20h & -h & 4h & -h
 \\
 \hline
-Iodice Andrea & -h & -h & -h & -h & -h
+Iodice Andrea & 1h & 10h & -h & 1h & -h
 \\
 \hline
 \end{tabular}

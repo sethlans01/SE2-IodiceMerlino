@@ -1,0 +1,406 @@
+\subsection{[R1]}
+\textbf{ The system allows Students to log in via GitHub.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R2]}
+\textbf{ The system allows Educators to log in via GitHub.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R3]}
+\textbf{ The system allows Educators to create a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R4]}
+\textbf{ The system allows Educators to view a list of only tournaments they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R5]}
+\textbf{ The system allows Educators to add other Educators to a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R6]}
+\textbf{ The system allows Educators to view a list of all Educators that manage the tournament they are managing.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R7]}
+\textbf{ The system allows Educators to end a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R8]}
+\textbf{ The system allows Educators to view a list of Students that are enrolled in a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R9]}
+\textbf{ The system allows Educators to create a battle in a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R10]}
+\textbf{ The system allows Educators to view a list of teams that are participating to a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R11]}
+\textbf{ The system allows Educators to view a list of submitted solutions for a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R12]}
+\textbf{ The system allows Educators to view the repository of each solution submitted to a battle they have created.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Authentication Manager
+\item GitHub Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R13]}
+\textbf{ The system allows Educators to grade a solution for a battle they have created, after the deadline of a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R14]}
+\textbf{ The system allows Educators to see the grade given by the automated tests to a solution of a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R15]}
+\textbf{ The system allows Educators to view the rank scoreboard of a tournament they manage.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Submission Evaluation Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R16]}
+\textbf{ The system allows Students to view a list of all available tournaments.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R17]}
+\textbf{ The system allows Students to join a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R18]}
+\textbf{ The system allows Students to view a list of tournaments they are enrolled in.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R19]}
+\textbf{ The system allows Students to view a list of all available battles of a given tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R20]}
+\textbf{ The system allows Students to create a team for a battle.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R21]}
+\textbf{ The system allows Team Leaders to invite other students to their team.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R22]}
+\textbf{ The system allows Students to view a list of invitations received.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R23]}
+\textbf{ The system allows Students to accept an invite.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R24]}
+\textbf{ The system allows Students to decline an invite.}
+\begin{itemize}
+\item CodeKata Web App
+\end{itemize}
+\subsection{[R25]}
+\textbf{ The system allows Students to view a list of battles they have joined, given a tournament.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R26]}
+\textbf{ The system allows Students to view the description of a battle they are enrolled into.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R27]}
+\textbf{ The system allows Students to view the repository of a battle they are enrolled into.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R28]}
+\textbf{ The system allows Students to view the score of the solution submitted, given a battle, and after the solution has been graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Battle manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R29]}
+\textbf{ The system allows Students to view the rank scoreboard of a tournament they are enrolled in.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Tournament manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R30]}
+\textbf{ The system runs GitHub Actions on battles’ repository.}
+\begin{itemize}
+\item Github Manager
+\end{itemize}
+\subsection{[R31]}
+\textbf{ The system detects when a new version of the main branch is available.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\end{itemize}
+\subsection{[R32]}
+\textbf{ System notifies student they have been invited to a team.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R33]}
+\textbf{ System assign automatic grading.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Submission Evaluation manager
+\item Github Manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R34]}
+\textbf{ System notifies students a new battle is available.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R35]}
+\textbf{ System notifies students a new tournament is available. }
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R36]}
+\textbf{ System notifies a tournament has been closed.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R37]}
+\textbf{ System notifies a student that a battle has ended.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R38]}
+\textbf{ System notifies a team their solution has been graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R39]}
+\textbf{ System notifies educators that a new submission is ready to be graded.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R40]}
+\textbf{ System notifies students that the student they have invited to their team has accepted/rejected the invite.}
+\begin{itemize}
+\item CodeKata Web App
+\item Web Server
+\item Http Manager
+\item Notification manager
+\item Model
+\item Database
+\end{itemize}
+\subsection{[R41]}
+\textbf{ System is able to fork the educator’s repository.}
+\begin{itemize}
+\item Github manager
+\item Model
+\item Database
+\end{itemize}
