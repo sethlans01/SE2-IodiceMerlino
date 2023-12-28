@@ -1,88 +1,105 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Purpose}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Scope}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{3}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Definitions}{3}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Acronyms}{4}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Abbreviations}{4}{subsubsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.4}Revision History}{4}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Reference Documents}{4}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Document Structure}{4}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Architectural design}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Overview}{6}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}High level view}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Distributed view}{7}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Component view}{7}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}The Relational Database}{9}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}The Model}{9}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}The GitHub Manager}{9}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}The Notification Manager}{9}{subsubsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.5}The Authentication Manager}{9}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}The HTTP Manager}{9}{subsubsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.7}The Battle Manager}{9}{subsubsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.8}The Tournament Manager}{9}{subsubsection.2.2.8}%
-\contentsline {subsubsection}{\numberline {2.2.9}The Submission Evaluation Manager}{9}{subsubsection.2.2.9}%
-\contentsline {subsubsection}{\numberline {2.2.10}The Web-App}{9}{subsubsection.2.2.10}%
-\contentsline {subsubsection}{\numberline {2.2.11}The Web Server}{10}{subsubsection.2.2.11}%
-\contentsline {subsection}{\numberline {2.3}Deployment view}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Runtime views}{12}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Component interfaces}{19}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Web Server}{19}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Http Manager}{19}{subsubsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.6}Selected architectural Styles and patterns}{20}{subsection.2.6}%
-\contentsline {subsubsection}{\numberline {2.6.1}4-tier Architecture}{20}{subsubsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.2}Model View Controller pattern}{20}{subsubsection.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.6.3}Facade pattern}{21}{subsubsection.2.6.3}%
-\contentsline {subsubsection}{\numberline {2.6.4}Mediator pattern}{21}{subsubsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.7}Other design decisions}{21}{subsection.2.7}%
-\contentsline {subsubsection}{\numberline {2.7.1}Availability}{21}{subsubsection.2.7.1}%
-\contentsline {subsubsection}{\numberline {2.7.2}User Session}{21}{subsubsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.3}Notifications}{21}{subsubsection.2.7.3}%
-\contentsline {subsubsection}{\numberline {2.7.4}Data Storage}{21}{subsubsection.2.7.4}%
-\contentsline {subsubsection}{\numberline {2.7.5}Rust backend}{21}{subsubsection.2.7.5}%
-\contentsline {section}{\numberline {3}User Interface Design}{22}{section.3}%
-\contentsline {section}{\numberline {4}Requirement traceability}{23}{section.4}%
-\contentsline {subsection}{\numberline {4.1}[R1]}{23}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}[R2]}{23}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}[R3]}{23}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}[R4]}{23}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}[R5]}{24}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}[R6]}{24}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}[R7]}{24}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}[R8]}{24}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}[R9]}{25}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}[R10]}{25}{subsection.4.10}%
-\contentsline {subsection}{\numberline {4.11}[R11]}{25}{subsection.4.11}%
-\contentsline {subsection}{\numberline {4.12}[R12]}{26}{subsection.4.12}%
-\contentsline {subsection}{\numberline {4.13}[R13]}{26}{subsection.4.13}%
-\contentsline {subsection}{\numberline {4.14}[R14]}{26}{subsection.4.14}%
-\contentsline {subsection}{\numberline {4.15}[R15]}{27}{subsection.4.15}%
-\contentsline {subsection}{\numberline {4.16}[R16]}{27}{subsection.4.16}%
-\contentsline {subsection}{\numberline {4.17}[R17]}{27}{subsection.4.17}%
-\contentsline {subsection}{\numberline {4.18}[R18]}{27}{subsection.4.18}%
-\contentsline {subsection}{\numberline {4.19}[R19]}{28}{subsection.4.19}%
-\contentsline {subsection}{\numberline {4.20}[R20]}{28}{subsection.4.20}%
-\contentsline {subsection}{\numberline {4.21}[R21]}{28}{subsection.4.21}%
-\contentsline {subsection}{\numberline {4.22}[R22]}{28}{subsection.4.22}%
-\contentsline {subsection}{\numberline {4.23}[R23]}{29}{subsection.4.23}%
-\contentsline {subsection}{\numberline {4.24}[R24]}{29}{subsection.4.24}%
-\contentsline {subsection}{\numberline {4.25}[R25]}{29}{subsection.4.25}%
-\contentsline {subsection}{\numberline {4.26}[R26]}{29}{subsection.4.26}%
-\contentsline {subsection}{\numberline {4.27}[R27]}{30}{subsection.4.27}%
-\contentsline {subsection}{\numberline {4.28}[R28]}{30}{subsection.4.28}%
-\contentsline {subsection}{\numberline {4.29}[R29]}{30}{subsection.4.29}%
-\contentsline {subsection}{\numberline {4.30}[R30]}{30}{subsection.4.30}%
-\contentsline {subsection}{\numberline {4.31}[R31]}{30}{subsection.4.31}%
-\contentsline {subsection}{\numberline {4.32}[R32]}{31}{subsection.4.32}%
-\contentsline {subsection}{\numberline {4.33}[R33]}{31}{subsection.4.33}%
-\contentsline {subsection}{\numberline {4.34}[R34]}{31}{subsection.4.34}%
-\contentsline {subsection}{\numberline {4.35}[R35]}{31}{subsection.4.35}%
-\contentsline {subsection}{\numberline {4.36}[R36]}{32}{subsection.4.36}%
-\contentsline {subsection}{\numberline {4.37}[R37]}{32}{subsection.4.37}%
-\contentsline {subsection}{\numberline {4.38}[R38]}{32}{subsection.4.38}%
-\contentsline {subsection}{\numberline {4.39}[R39]}{32}{subsection.4.39}%
-\contentsline {subsection}{\numberline {4.40}[R40]}{33}{subsection.4.40}%
-\contentsline {subsection}{\numberline {4.41}[R41]}{33}{subsection.4.41}%
-\contentsline {section}{\numberline {5}Implementation, Integration and Test Plan}{34}{section.5}%
-\contentsline {section}{\numberline {6}Effort Spent}{35}{section.6}%
-\contentsline {section}{\numberline {7}References}{36}{section.7}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Purpose}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scope}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{4}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Definitions}{4}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Acronyms}{5}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Abbreviations}{5}{subsubsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.4}Revision History}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Reference Documents}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Document Structure}{5}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Architectural design}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Overview}{7}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}High level view}{7}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Distributed view}{8}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Component view}{8}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}The Relational Database}{10}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}The Model}{10}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}The GitHub Manager}{10}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}The Notification Manager}{10}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}The Authentication Manager}{10}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.6}The HTTP Manager}{10}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.7}The Battle Manager}{10}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.8}The Tournament Manager}{10}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.9}The Submission Evaluation Manager}{10}{subsubsection.2.2.9}%
+\contentsline {subsubsection}{\numberline {2.2.10}The Web-App}{10}{subsubsection.2.2.10}%
+\contentsline {subsubsection}{\numberline {2.2.11}The Web Server}{11}{subsubsection.2.2.11}%
+\contentsline {subsection}{\numberline {2.3}Deployment view}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Runtime views}{13}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Component interfaces}{20}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Web Server}{20}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Http Manager}{20}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Selected architectural Styles and patterns}{21}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}4-tier Architecture}{21}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}Model View Controller pattern}{21}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}Facade pattern}{22}{subsubsection.2.6.3}%
+\contentsline {subsubsection}{\numberline {2.6.4}Mediator pattern}{22}{subsubsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.7}Other design decisions}{22}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}Availability}{22}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}User Session}{22}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}Notifications}{22}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}Data Storage}{22}{subsubsection.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.7.5}Rust backend}{22}{subsubsection.2.7.5}%
+\contentsline {section}{\numberline {3}User Interface Design}{23}{section.3}%
+\contentsline {section}{\numberline {4}Requirement traceability}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}[R1]}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}[R2]}{24}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}[R3]}{24}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}[R4]}{24}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}[R5]}{25}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}[R6]}{25}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}[R7]}{25}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}[R8]}{25}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}[R9]}{26}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}[R10]}{26}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}[R11]}{26}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}[R12]}{27}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}[R13]}{27}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}[R14]}{27}{subsection.4.14}%
+\contentsline {subsection}{\numberline {4.15}[R15]}{28}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}[R16]}{28}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}[R17]}{28}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}[R18]}{28}{subsection.4.18}%
+\contentsline {subsection}{\numberline {4.19}[R19]}{29}{subsection.4.19}%
+\contentsline {subsection}{\numberline {4.20}[R20]}{29}{subsection.4.20}%
+\contentsline {subsection}{\numberline {4.21}[R21]}{29}{subsection.4.21}%
+\contentsline {subsection}{\numberline {4.22}[R22]}{29}{subsection.4.22}%
+\contentsline {subsection}{\numberline {4.23}[R23]}{30}{subsection.4.23}%
+\contentsline {subsection}{\numberline {4.24}[R24]}{30}{subsection.4.24}%
+\contentsline {subsection}{\numberline {4.25}[R25]}{30}{subsection.4.25}%
+\contentsline {subsection}{\numberline {4.26}[R26]}{30}{subsection.4.26}%
+\contentsline {subsection}{\numberline {4.27}[R27]}{31}{subsection.4.27}%
+\contentsline {subsection}{\numberline {4.28}[R28]}{31}{subsection.4.28}%
+\contentsline {subsection}{\numberline {4.29}[R29]}{31}{subsection.4.29}%
+\contentsline {subsection}{\numberline {4.30}[R30]}{31}{subsection.4.30}%
+\contentsline {subsection}{\numberline {4.31}[R31]}{31}{subsection.4.31}%
+\contentsline {subsection}{\numberline {4.32}[R32]}{32}{subsection.4.32}%
+\contentsline {subsection}{\numberline {4.33}[R33]}{32}{subsection.4.33}%
+\contentsline {subsection}{\numberline {4.34}[R34]}{32}{subsection.4.34}%
+\contentsline {subsection}{\numberline {4.35}[R35]}{32}{subsection.4.35}%
+\contentsline {subsection}{\numberline {4.36}[R36]}{33}{subsection.4.36}%
+\contentsline {subsection}{\numberline {4.37}[R37]}{33}{subsection.4.37}%
+\contentsline {subsection}{\numberline {4.38}[R38]}{33}{subsection.4.38}%
+\contentsline {subsection}{\numberline {4.39}[R39]}{33}{subsection.4.39}%
+\contentsline {subsection}{\numberline {4.40}[R40]}{34}{subsection.4.40}%
+\contentsline {subsection}{\numberline {4.41}[R41]}{34}{subsection.4.41}%
+\contentsline {section}{\numberline {5}Implementation, Integration and Test Plan}{35}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Overview}{35}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Implementation plan}{35}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}First rank: Database}{35}{subsubsection.5.2.1}%
+\contentsline {paragraph}{The database's}{35}{section*.2}%
+\contentsline {subsubsection}{\numberline {5.2.2}Second rank: Model and Github Manager}{35}{subsubsection.5.2.2}%
+\contentsline {paragraph}{The Model}{35}{section*.3}%
+\contentsline {paragraph}{The Github Manager}{35}{section*.4}%
+\contentsline {subsubsection}{\numberline {5.2.3}Third rank: Tournament, Authentication, Battle, Submission evaluation and Notification Manager}{35}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Fourth rank: Http Manager}{35}{subsubsection.5.2.4}%
+\contentsline {paragraph}{The Http Manager}{35}{section*.5}%
+\contentsline {subsubsection}{\numberline {5.2.5}Fifth rank: Web Server}{35}{subsubsection.5.2.5}%
+\contentsline {paragraph}{The Web server's}{35}{section*.6}%
+\contentsline {subsubsection}{\numberline {5.2.6}Sixth rank: CodeKata WebApp}{35}{subsubsection.5.2.6}%
+\contentsline {paragraph}{The Web app}{35}{section*.7}%
+\contentsline {subsection}{\numberline {5.3}Component Integration and Testing}{36}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}System testing}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Additional specification on testing}{39}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Effort Spent}{40}{section.6}%
+\contentsline {section}{\numberline {7}References}{41}{section.7}%

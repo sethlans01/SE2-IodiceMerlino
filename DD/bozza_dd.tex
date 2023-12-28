@@ -204,55 +204,56 @@ Further details about the elements in the graph are provided in the following.
 \newpage
 \subsection{Runtime views}
 \begin{center}
-    \includegraphics[angle=90,width=0.4\linewidth]{uc7.jpg}
+    \includegraphics[angle=-90,width=0.4\linewidth]{uc7.jpg}
    \captionof{figure}{UC7}
   \label{fig:uc7}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=0.8\linewidth]{uc8.jpg}
+    \includegraphics[angle=-90,width=0.8\linewidth]{uc8.jpg}
    \captionof{figure}{UC8}
   \label{fig:uc8}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=0.7\linewidth]{uc9.jpg}
+    \includegraphics[angle=-90,width=0.7\linewidth]{uc9.jpg}
    \captionof{figure}{UC9}
   \label{fig:uc9}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=0.37\linewidth]{uc10.jpg}
+    \includegraphics[angle=-90,width=0.37\linewidth]{uc10.jpg}
    \captionof{figure}{UC10}
   \label{fig:uc10}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=0.4\linewidth]{uc11.jpg}
+    \includegraphics[angle=-90,width=0.4\linewidth]{uc11.jpg}
    \captionof{figure}{UC11}
   \label{fig:uc11}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=\linewidth]{uc12.jpg}
+    \includegraphics[angle=-90,width=\linewidth]{uc12.jpg}
    \captionof{figure}{UC12}
   \label{fig:uc12}
 \end{center}
 
 \newpage
 \begin{center}
-    \includegraphics[angle=90,width=0.5\linewidth]{uc13.jpg}
+    \includegraphics[angle=-90,width=0.5\linewidth]{uc13.jpg}
    \captionof{figure}{UC13}
   \label{fig:uc13}
 \end{center}
 
 \newpage
 \subsection{Component interfaces}
+\label{ssc:ci}
 \subsubsection{Web Server}
 \textbf{selectTournament(tournamentID)}\\
 Rest API call used to get the  tournament view\\
@@ -788,13 +789,88 @@ The rust backend allows the system to handle high ammounts of requests consuming
 
 \newpage
 \section{Implementation, Integration and Test Plan}
+\subsection{Overview}
+This chapter describes how the implementation and the system will be executed. The order with which the components will be implemented and tested. The kind test that will be executed on the system as integration tests and as system tests.
+
+\subsection{Implementation plan}
+The implementation will follow a bottom-up approach to reduce the amount of stubs needed for integration testing, although stub and drivers will still be needed for unit testing. After the implementation and the modification of a module unit tests will be run. Each component will expose the interfaces listed in the \ref{ssc:ci} subsection.\\
+
+Components will be divided in ranks, components in the same ranks can be implemented in parallel as they are independent from one another. The system will be implemented from the first to the latest rank, one rank at the time.
+
+\subsubsection{First rank: Database}
+\paragraph{The database's} schema design will be the first step of the implementation. For every end point listed on the \ref{ssc:ci} subsection a corresponding prepared statement will be implemented, this will improve the database performance and will make query to the database for the needed data easter and independent from the true structure of the database schema.
+
+\subsubsection{Second rank: Model and Github Manager}
+\paragraph{The Model} will require a test database in order to execute unit testing.
+\paragraph{The Github Manager} will require a stub for the unit, integration and system testing as the github api is rate limited and using the real api for testing will reduce the ammount of request available to the system.
+
+\subsubsection{Third rank: Tournament, Authentication, Battle, Submission evaluation and Notification Manager}
+These five components are indipenedt from each other and can be developed in parallel.
+
+\subsubsection{Fourth rank: Http Manager}
+\paragraph{The Http Manager}will expose an http server. The unit and integration test's drivers will be required to connect to the http server.
+
+\subsubsection{Fifth rank: Web Server}
+\paragraph{The Web server's}configuration will define the load balancing system and the static files distribution. As the web server is an external unit testing will be only responsable to assert the correct configuration in order to more easely identify error in it without having to wait until the integration testing.
+
+\subsubsection{Sixth rank: CodeKata WebApp}
+\paragraph{The Web app}implementation will be the final step. The unit testing of the webapp will require a dedicated framework to automate the interface testing.
+
+\subsection{Component Integration and Testing}
+Each component will have a driver and stud used for the unit testing of that component.
+Regaridng integration testing, system integration will follow the implementation order and outised than the Model and Github Manager, components will not need studs. For each step all the top component will have their own driver that will execute the testing in parallel with the other drivers. The model stud will be copy of the production database schema.\\\\
+
+Here is a list of images describing the steps of the integration testing process:\\
+
+\begin{center}
+    \includegraphics[width=0.3\linewidth]{its1.png}
+   \captionof{figure}{First step of integration testing}
+  \label{fig:its1}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth]{its2.png}
+   \captionof{figure}{Second step of integration testing}
+  \label{fig:its2}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth]{its3.png}
+   \captionof{figure}{Third step of integration testing}
+  \label{fig:its3}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth]{its4.png}
+   \captionof{figure}{Fourth step of integration testing}
+  \label{fig:its4}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth]{its5.png}
+   \captionof{figure}{Fifth step of integration testing}
+  \label{fig:its5}
+\end{center}
+
+\subsection{System testing}
+After creating the components, unit testing them, integrating the system and testing the system integration the system will be testend in it's entierty to verify that all functions have been developed correctly and the system comply with the reqirements. Different aspect of the system will be tested such as:
+\begin{itemize}
+\item Functional testing: this will verify that the system satisfies the functional requirements defined in the RASD.
+\item Performance testing: this will verify that the system satisfies the performance requirements and it will help identify the system real performances make it able to find system inefficecy if they are present.
+\item Usability testing: this will verify how easy is to use the system and if there are problem with the user experience.
+\item Load testing: this will verify how the system behaves under heavy load and will help find resource wasting bugs if they are present.
+\item Stress testing: this will verify how the system recovers after a failure.
+\end{itemize}
+
+\subsection{Additional specification on testing}
+All the test will need to be repeated every time some part of the implementation is changed, this is done to maximise the system relaiability.
 
 \newpage
 \section{Effort Spent}
 \begin{center}
 \begin{tabular}{||l|c|c|c|c|c||}
 \hline
-Merlino Lorenzo & 2h & 20h & -h & 4h & -h
+Merlino Lorenzo & 2h & 20h & 2h & 4h & 5h
 \\
 \hline
 Iodice Andrea & 1h & 10h & -h & 1h & -h
@@ -806,6 +882,6 @@ Iodice Andrea & 1h & 10h & -h & 1h & -h
 \newpage
 \section{References}
 \begin{itemize}
-\item lol
+\item UML diagrams: plantUML, starUML
 \end{itemize}
 \end{document}
