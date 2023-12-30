@@ -29,6 +29,7 @@ for line in lines:
                 state = 0
             else:
                 values = line.split(":")
+                print(values)
                 output.append("\\textit{"+values[0]+"}:"+values[1]+"\\\\\n")
 
 with open("output.txt","w") as file:
