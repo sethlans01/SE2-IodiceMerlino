@@ -296,11 +296,42 @@ Further details about the elements in the graph are provided in the following.
 \newpage
 \subsection{Component interfaces}
 \label{ssc:ci}
+The Github API interfaces used in the diagrams are not listed as they are just a simplification over the real Github API endpoint
+
 \subsubsection{Web Server}
+\textbf{createTournament(tournamentInfo)}\\
+Rest API call used to create a new tournament\\
+\textit{Param}: info about the new tournament\\
+\textit{Returns}: 200 if successful\\
+\\
 \textbf{selectTournament(tournamentID)}\\
-Rest API call used to get the  tournament view\\
+Rest API call used to get the tournament view\\
 \textit{Param}: tournamentID the ID of the tournament\\
 \textit{Returns}: all data needed to build the tournament view if successful\\
+\\
+\textbf{addEducator()}\\
+Rest API call used to get the list of all the educators that can be added to the current tournament\\
+\textit{Returns}: List of available educators\\
+\\
+\textbf{selectEducator(educatorID)}\\
+Rest API call to add an educator to a tournament\\
+\textit{Param}: educatorID\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{createBattle(battleInfo)}\\
+Rest API call used to create a battle\\
+\textit{Param}: info about the battle to be created\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Rest API call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Grade}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{closeTournament()}\\
+Rest API call used to close the currently selected tournament\\
+\textit{Returns}: Ok value if successful\\
 \\
 \textbf{selectBattle(battleID)}\\
 Rest API call used to get the battle\\
@@ -331,12 +362,55 @@ Rest API call used to get the available students for the specified battle\\
 Rest API call used to invite a new student\\
 \textit{Param}: newInviteInfo info regarding the student being invited and the battle\\
 \textit{Returns}: 200 if successful\\
+\\
+\textbf{getRankings(tournamentID)}\\
+Rest API call used to get the rankings of the tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: a list of username and their score if successful\\
+\\
+\textbf{WebHookEvent(eventInfo)}\\
+Rest API call used by github to notify a new version of a repository of a user has been pushed\\
+\textit{Param}: eventInfo Info regarding the webhook event as stated in the github api documentation\\
+\textit{Returns}: 200 if successful\\
+\\
+\textbf{authenticate(code)}\\
+Rest API callback used by github to redirect a user after they completed authentication\\
+\textit{Param}: code the code needed to create a new access code for the user\\
+\textit{Returns}: The Homepage if successful\\
+\\
+\textbf{evaluateSubmission(submissionID)}\\
+Rest API called to show the evaluation view for the selected submission\\
+\textit{Param}: submissionID of the submission to be evaluated\\
+\textit{Returns}: evaluation view for the selected submission\\
+\\
+\textbf{joinTournament()}\\
+Rest API call used to make the current student join the selected tournament\\
+\textit{Returns}: Ok value if successful\\
 
-\subsubsection{Http Manager}
+\subsubsection{HTTP Manager}
+\textbf{createTournament(tournamentInfo)}\\
+Rest API call used to create a new tournament\\
+\textit{Param}: info about the new tournament\\
+\textit{Returns}: 200 if successful\\
+\\
 \textbf{selectTournament(tournamentID)}\\
 Rest API call used to get the  tournament view\\
 \textit{Param}: tournamentID the ID of the tournament\\
 \textit{Returns}: all data needed to build the tournament view if successful\\
+\\
+\textbf{addEducator()}\\
+Rest API call used to get the list of all the educators that can be added to the current tournament\\
+\textit{Returns}: List of available educators\\
+\\
+\textbf{selectEducator(educatorID)}\\
+Rest API call to add an educator to a tournament\\
+\textit{Param}: educatorID\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{createBattle(battleInfo)}\\
+Rest API call used to create a battle\\
+\textit{Param}: info about the battle to be created\\
+\textit{Returns}: Ok value if successful\\
 \\
 \textbf{selectBattle(battleID)}\\
 Rest API call used to get the battle\\
@@ -367,7 +441,584 @@ Rest API call used to get the available students for the specified battle\\
 Rest API call used to invite a new student\\
 \textit{Param}: newInviteInfo info regarding the student being invited and the battle\\
 \textit{Returns}: 200 if successful\\
+\\
+\textbf{getRankings(tournamentID)}\\
+Rest API call used to get the rankings of the tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: a list of username and their score if successful\\
+\\
+\textbf{WebHookEvent(eventInfo)}\\
+Rest API call used by github to notify a new version of a repository of a user has been pushed\\
+\textit{Param}: eventInfo Info regarding the webhook event as stated in the github api documentation\\
+\textit{Returns}: 200 if successful\\
+\\
+\textbf{authenticate(code)}\\
+Rest API callback used by github to redirect a user after they completed authentication\\
+\textit{Param}: code the code needed to create a new access code for the user\\
+\textit{Returns}: The Homepage if successful\\
+\\
+\textbf{evaluateSubmission(submissionID)}\\
+Rest API called to show the evaluation view for the selected submission\\
+\textit{Param}: submissionID of the submission to be evaluated\\
+\textit{Returns}: evaluation view for the selected submission\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Rest API call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Grade}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{closeTournament()}\\
+Rest API call used to close the currently selected tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{joinTournament()}\\
+Rest API call used to make the current student join the selected tournament\\
+\textit{Returns}: Ok value if successful\\
 
+\subsubsection{Tournament Manager}
+\textbf{createTournament(tournamentInfo)}\\
+Function call used to create a new tournament\\
+\textit{Param}: info about the new tournament\\
+\textit{Returns}: 200 if successful\\
+\\
+\textbf{selectTournament(tournamentID)}\\
+Function call used to get the  tournament view\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: all data needed to build the tournament view if successful\\
+\\
+\textbf{addEducator()}\\
+Rest API call used to get the list of all the educators that can be added to the current tournament\\
+\textit{Returns}: List of available educators\\
+\\
+\textbf{selectEducator(educatorID)}\\
+Function call to add an educator to a tournament\\
+\textit{Param}: educatorID\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{closeTournament()}\\
+Function call used to close the currently selected tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{joinTournament()}\\
+Function call used to make the current student join the selected tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getRankings(tournamentID)}\\
+Function call used to get the rankings of the tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: a list of username and their score if successful\\
+
+\subsubsection{Battle Manager}
+\textbf{createBattle(battleInfo)}\\
+Function call used to create a battle\\
+\textit{Param}: info about the battle to be created\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{selectBattle(battleID)}\\
+Function call used to get the battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: all data needed to build the battle view if successful\\
+\\
+\textbf{createTeam(teamInfo)}\\
+Function call used create a new team for a battle\\
+\textit{Param}: teamInfo the info about the new team\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleForkInfo(forkInfo)}\\
+Function call used get all info needed to fork the battle repository\\
+\textit{Param}: battleID the id of the battle related to the repository\\
+\textit{Returns}: the fork informations if successful\\
+\\
+\textbf{getInvites(battleID,studentID)}\\
+Function call used to get the invites for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Param}: studentID the ID of the student invited\\
+\textit{Returns}: list of invites and their id if successful\\
+\\
+\textbf{acceptInvite(inviteID)}\\
+Function call used to accept an invite to a team\\
+\textit{Param}: inviteID the id of the invite\\
+\textit{Returns}: Info regarding the student that has joined and the team that has been joined if successful\\
+\\
+\textbf{getAvailableStudents(battleID)}\\
+Function call used to get the available students for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: list of students usernames and their id if successful\\
+\\
+\textbf{inviteStudent(newInviteInfo)}\\
+Function call used to invite a new student\\
+\textit{Param}: newInviteInfo info regarding the student being invited, the battle and the student that has invited\\
+\textit{Returns}: Info regarding the student that should join and the team that should be joined if successful\\
+\\
+\textbf{getLastCommitCode(owner, repositoryName)}\\
+Function call used to get the code of the last submission of the specified repository\\
+\textit{Param}: owner\\
+\textit{repositoryName}: name of the repository\\
+\textit{Returns}: code of the last submission of the repository\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Function call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Grade}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+
+\subsubsection{Model}
+\textbf{createTournament(tournamentInfo)}\\
+Function call used to create a new tournament\\
+\textit{Param}: info about the new tournament\\
+\textit{Returns}: 200 if successful\\
+\\
+\textbf{selectTournament(tournamentID)}\\
+Function call used to get the  tournament view\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: all data needed to build the tournament view if successful\\
+\\
+\textbf{getNewTournamentInfo()}\\
+Function call used to get the info about the newly created tournament\\
+\textit{Returns}: tournamentInfo\\
+\\
+\textbf{getNewBattleInfo()}\\
+Function call used to get the info about the newly created battle\\
+\textit{Returns}: battleInfo\\
+\\
+\textbf{getStudentsList()}\\
+Function call used to get the list of all the students subscribed to the CKB platform\\
+\textit{Returns}: Students list\\
+\\
+\textbf{getAvailableEducators(tournamentID)}\\
+Function call used to get the list of all the educators that can be added to the specified tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: List of available educators\\
+\\
+\textbf{selectEducator(educatorID)}\\
+Function call to add an educator to a tournament\\
+\textit{Param}: educatorID\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{createBattle(battleInfo)}\\
+Function call used to create a battle\\
+\textit{Param}: info about the battle to be created\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getAutomatedEvaluationScore(submissionID)}\\
+Function call used to get the score of the automatic evaluation of the specified submission\\
+\textit{Param}: submissionID\\
+\textit{Returns}: score of the automatic evaluation of the submission\\
+\\
+\textbf{closeTournament(tournamentID)}\\
+Function call used to close the currently selected tournament\\
+\textit{Param}: ID of the tournament to be closed\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{joinTournament()}\\
+Function call used to make the current student join the selected tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{selectBattle(battleID)}\\
+Function call used to get the battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: all data needed to build the battle view if successful\\
+\\
+\textbf{createTeam(teamInfo)}\\
+Function call used create a new team for a battle\\
+\textit{Param}: teamInfo the info about the new team\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleForkInfo(forkInfo)}\\
+Function call used get all info needed to fork the battle repository\\
+\textit{Param}: battleID the id of the battle related to the repository\\
+\textit{Returns}: the fork informations if successful\\
+\\
+\textbf{getInvites(battleID,studentID)}\\
+Function call used to get the invites for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Param}: studentID the ID of the student invited\\
+\textit{Returns}: list of invites and their id if successful\\
+\\
+\textbf{getInviteInfo(inviteID)}\\
+Function call used to get info about an invite\\
+\textit{Param}: inviteID the id of the invite\\
+\textit{Returns}: Info regarding the student that should join and the team that should be joined if successful\\
+\\
+\textbf{joinTeam(studentID,teamID)}\\
+Function call used to make a student join a team\\
+\textit{Param}: studentID the id of the student that is joining\\
+\textit{Param}: teamID the id of the team\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getUsername(studentID)}\\
+Function call used to get the github username of a student\\
+\textit{Param}: studentID the id of the student\\
+\textit{Returns}: a username if successful\\
+\\
+\textbf{getRepositoryJoinInfo(teamID)}\\
+Function call used to get the info needed by the github api to add a collaborator\\
+\textit{Param}: teamID the id of the team\\
+\textit{Returns}: the info needed if successful\\
+\\
+\textbf{newNotification(studentID,text)}\\
+Function call used to create a new notification\\
+\textit{Param}: studentID the student to which the notification is directed\\
+\textit{Param}: text the text of the notification\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newNotification(educatorID,text)}\\
+Function call used to create a new notification\\
+\textit{Param}: educatorID the educator to which the notification is directed\\
+\textit{Param}: text the text of the notification\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getAvailableStudents(battleID)}\\
+Function call used to get the available students for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: list of students usernames and their id if successful\\
+\\
+\textbf{isTeamLeader(studentID,battleID)}\\
+Function call used to check if a student is team leader\\
+\textit{Param}: studentID the id of the student\\
+\textit{Param}: battleID the id of the battle\\
+\textit{Returns}: the id of the team if the student is team leader if successful\\
+\\
+\textbf{inviteStudent(teamID,studentID)}\\
+Function call used to invite a student to a team\\
+\textit{Param}: teamID the id of the team\\
+\textit{Param}: studentID the id of the student to invite\\
+\textit{Returns}: the id of the invite generated if successful\\
+\\
+\textbf{getRankings(tournamentID)}\\
+Function call used to get the rankings of the tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: a list of username and their score if successful\\
+\\
+\textbf{getTeamFromUsername(owner)}\\
+Function call used to get the teamID of the owner of a repository if the repository is linked to a battle\\
+\textit{Param}: owner the username of the repository\\
+\textit{Returns}: the teamID of the team if successful\\
+\\
+\textbf{isTeamValid(teamID)}\\
+Function call used to check if the team meets the requirements of the battle to compete and if the battle is open\\
+\textit{Param}: teamID the ID of the team to check\\
+\textit{Returns}: true if the conditions are met\\
+\\
+\textbf{assignGrading(repository,testScore,analysisScore)}\\
+Function call used to set the score of a team for the automatic grading\\
+\textit{Param}: repository the name of the repository\\
+\textit{Param}: testScore the score regarding the testing\\
+\textit{Param}: analysisScore the score regarding the static analysis\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleToClose()}\\
+Function call used to get a list of all the battle that need to be closed\\
+\textit{Returns}: a list of battles if successful\\
+\\
+\textbf{closeBattle(battleID)}\\
+Function call used to set a battle to closed status\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newNotification(educatorID,text)}\\
+Function call used to create a new notification\\
+\textit{Param}: educatorID the educator to which the notification is directed\\
+\textit{Param}: text the text of the notification\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleCloseInfo(battleID)}\\
+Function call used to get information about the name of a battle and its creator\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: information about the name of a battle and its creator if successful\\
+\\
+\textbf{getBattleStudentList(battleID)}\\
+Function call used to get the list of students participating in a battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: a list of studentID if successful\\
+\\
+\textbf{getNotifications(userID)}\\
+Function call used to get all the new notification of a user\\
+\textit{Param}: userID the ID of the user\\
+\textit{Returns}: list of notifications if successful\\
+\\
+\textbf{updateAccessToken(username)}\\
+Function call used to update the user access token and get the userID\\
+\textit{Param}: username the github username of the user\\
+\textit{Returns}: the userID if successful\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Function call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Param}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+
+\subsubsection{Database}
+All database api call refer to prepared statements in the SQL database
+\textbf{createTournament(tournamentInfo)}\\
+Database API call used to create a new tournament\\
+\textit{Param}: info about the new tournament\\
+\textit{Returns}: 200 if successful\\
+\\
+\textbf{selectTournament(tournamentID)}\\
+Database API call used to get the  tournament view\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: all data needed to build the tournament view if successful\\
+\\
+\textbf{getStudentsList()}\\
+Database API call used to get the list of all the students subscribed to the CKB platform\\
+\textit{Returns}: Students list\\
+\\
+\textbf{getAvailableEducators(tournamentID)}\\
+Database API call used to get the list of all the educators that can be added to the specified tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: List of available educators\\
+\\
+\textbf{addEducatorToTournament(tournamentID, educatorID)}\\
+Database API call used to add an Educator to a tournament\\
+\textit{Param}: tournamentID\\
+\textit{educatorID}: id of the educator to be added to the tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{createBattle(battleInfo)}\\
+Database API call used to create a battle\\
+\textit{Param}: info about the battle to be created\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getAutomatedEvaluationScore(submissionID)}\\
+Database API call used to get the score of the automatic evaluation of the specified submission\\
+\textit{Param}: submissionID\\
+\textit{Returns}: score of the automatic evaluation of the submission\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Database API call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Grade}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{closeTournament(tournamentID)}\\
+Database API call used to close the currently selected tournament\\
+\textit{Param}: ID of the tournament to be closed\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{joinTournament(studentID, tournamentID)}\\
+Database API call used to make a student join the specified tournament\\
+\textit{Param}: studentID\\
+\textit{tournamentID}: ID of the tournament\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{selectBattle(battleID)}\\
+Database API call used to get the battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: all data needed to build the battle view if successful\\
+\\
+\textbf{createTeam(teamInfo)}\\
+Database API call used create a new team for a battle\\
+\textit{Param}: teamInfo the info about the new team\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleForkInfo(forkInfo)}\\
+Database API call used get all info needed to fork the battle repository\\
+\textit{Param}: battleID the id of the battle related to the repository\\
+\textit{Returns}: the fork informations if successful\\
+\\
+\textbf{getInvites(battleID,studentID)}\\
+Database API call used to get the invites for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Param}: studentID the ID of the student invited\\
+\textit{Returns}: list of invites and their id if successful\\
+\\
+\textbf{getInviteInfo(inviteID)}\\
+Database API call used to get info about an invite\\
+\textit{Param}: inviteID the id of the invite\\
+\textit{Returns}: Info regarding the student that should join and the team that should be joined if successful\\
+\\
+\textbf{joinTeam(studentID,teamID)}\\
+Database API call used to make a student join a team\\
+\textit{Param}: studentID the id of the student that is joining\\
+\textit{Param}: teamID the id of the team\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getUsername(studentID)}\\
+Database API call used to get the github username of a student\\
+\textit{Param}: studentID the id of the student\\
+\textit{Returns}: a username if successful\\
+\\
+\textbf{getRepositoryJoinInfo(teamID)}\\
+Database API call used to get the info needed by the github api to add a collaborator\\
+\textit{Param}: teamID the id of the team\\
+\textit{Returns}: the info needed if successful\\
+\\
+\textbf{newNotification(studentID,text)}\\
+Database API call used to create a new notification\\
+\textit{Param}: studentID the student to which the notification is directed\\
+\textit{Param}: text the text of the notification\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getAvailableStudents(battleID)}\\
+Database API call used to get the available students for the specified battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: list of students usernames and their id if successful\\
+\\
+\textbf{isTeamLeader(studentID,battleID)}\\
+Database API call used to check if a student is team leader\\
+\textit{Param}: studentID the id of the student\\
+\textit{Param}: battleID the id of the battle\\
+\textit{Returns}: the id of the team if the student is team leader if successful\\
+\\
+\textbf{inviteStudent(teamID,studentID)}\\
+Database API call used to invite a student to a team\\
+\textit{Param}: teamID the id of the team\\
+\textit{Param}: studentID the id of the student to invite\\
+\textit{Returns}: the id of the invite generated if successful\\
+\\
+\textbf{getRankings(tournamentID)}\\
+Database API call used to get the rankings of the tournament\\
+\textit{Param}: tournamentID the ID of the tournament\\
+\textit{Returns}: a list of username and their score if successful\\
+\\
+\textbf{getTeamFromUsername(owner)}\\
+Database API call used to get the teamID of the owner of a repository if the repository is linked to a battle\\
+\textit{Param}: owner the username of the repository\\
+\textit{Returns}: the teamID of the team if successful\\
+\\
+\textbf{isTeamValid(teamID)}\\
+Database API call used to check if the team meets the requirements of the battle to compete and if the battle is open\\
+\textit{Param}: teamID the ID of the team to check\\
+\textit{Returns}: true if the conditions are met\\
+\\
+\textbf{assignGrading(repository,testScore,analysisScore)}\\
+Database API used to set the score of a team for the automatic grading\\
+\textit{Param}: repository the name of the repository\\
+\textit{Param}: testScore the score regarding the testing\\
+\textit{Param}: analysisScore the score regarding the static analysis\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleToClose()}\\
+Database API call used to get a list of all the battle that need to be closed\\
+\textit{Returns}: a list of battles if successful\\
+\\
+\textbf{closeBattle(battleID)}\\
+Database API call used to set a battle to closed status\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newNotification(educatorID,text)}\\
+Database API call used to create a new notification\\
+\textit{Param}: educatorID the educator to which the notification is directed\\
+\textit{Param}: text the text of the notification\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getBattleCloseInfo(battleID)}\\
+Database API call used to get information about the name of a battle and its creator\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: information about the name of a battle and its creator if successful\\
+\\
+\textbf{getBattleStudentList(battleID)}\\
+Database API call used to get the list of students participating in a battle\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: a list of studentID if successful\\
+\\
+\textbf{getNotifications(userID)}\\
+Database API call used to get all the new notification of a user\\
+\textit{Param}: userID the ID of the user\\
+\textit{Returns}: list of notifications if successful\\
+\\
+\textbf{updateAccessToken(username)}\\
+Database API call used to update the user access token and get the userID\\
+\textit{Param}: username the github username of the user\\
+\textit{Returns}: the userID if successful\\
+
+\subsubsection{Github Manager}
+\textbf{fork(forkInfo)}\\
+Function call used to fork a repository\\
+\textit{Param}: forkInfo all info needed by the github api to fork a repository\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{addCollaborator(repositoryJoinInfo,username)}\\
+Function call used to add a collaborator to a github repository\\
+\textit{Param}: repositoryJoinInfo the info needed by the github api to add a collaborator\\
+\textit{Param}: username the username of the collaborator to add\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{runAutomaticEvaluation(owner,name)}\\
+Function call used to set the score of a team for the automatic grading\\
+\textit{Param}: owner the username of the owner of the repository\\
+\textit{Param}: name the name of the repository\\
+\textit{Returns}: The result of the evaluation if successful\\
+\\
+\textbf{getAccessToken(id,secret,code)}\\
+Function call used to get a new access code for a user\\
+\textit{Param}: id the id of the github app used by the system\\
+\textit{Param}: secret the secret key of the system give by github\\
+\textit{Param}: code the code given by the authorization request\\
+\textit{Returns}: The access token and the user username if successful\\
+\\
+\textbf{getLastCommitCode(owner, repositoryName)}\\
+Function call used to get the code of the last submission of the specified repository\\
+\textit{Param}: owner\\
+\textit{repositoryName}: name of the repository\\
+\textit{Returns}: code of the last submission of the repository\\
+
+\subsubsection{Notification Manager}
+\textbf{sendNewTournamentNotifications()}\\
+Function call used to send a new tournament notification to all Students\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newEducatorNotification(educatorID, tournamentID)}\\
+Function call used to notify an educator that they have been added to a tournament\\
+\textit{Param}: educatorID\\
+\textit{tournamentID}: ID of the tournament the educator has been added to\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{sendNewBattleNotifications()}\\
+Function call used to send a new battle notification to all Students\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{sendSubmissionEvaluatedNotifications(evaluationInfo)}\\
+Function call used to send a notification to the students of a team about the evaluation of their submission\\
+\textit{Param}: info regarding the submission and its grade\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newJoinNotification(joinInfo)}\\
+Function call used to create a new join notification\\
+\textit{Param}: joinInfo Info regarding the student that has joined and the team that has been joined\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newInviteToTeamNotification(inviteInfo)}\\
+Function call used to create a new join notification\\
+\textit{Param}: inviteInfo  Info regarding the student that should join and the team that should be joined\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newCloseBattleNotification(battleID)}\\
+Function call used to create notifications for all the student of a battle and its creator when the battle is closed\\
+\textit{Param}: battleID the ID of the battle\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{getNotifications(userID)}\\
+Function call used to get all the new notification of a user\\
+\textit{Param}: userID the ID of the user\\
+\textit{Returns}: list of notifications if successful\\
+
+\subsubsection{Submission Evaluation Manager}
+\textbf{evaluateSubmission(submissionID)}\\
+Function called to show the evaluation view for the selected submission\\
+\textit{Param}: submissionID of the submission to be evaluated\\
+\textit{Returns}: evaluation view for the selected submission\\
+\\
+\textbf{gradeSubmission(submissionID, grade)}\\
+Function call used to assign a grade to a specified submission\\
+\textit{Param}: submissionID ID of the submission to grade\\
+\textit{Grade}: grade to be assigned to the submission\\
+\textit{Returns}: Ok value if successful\\
+\\
+\textbf{newPushEvent(owner,name)}\\
+Function call to start the automatic evaluation of a submission\\
+\textit{Param}: owner the username of the owner of the repository\\
+\textit{Param}: name the name of the repository\\
+\textit{Returns}: Ok value if successful\\
+
+\subsubsection{Authentication Manager}
+\textbf{authenticate(code)}\\
+Rest API callback used by github to redirect a user after they completed authentication\\
+\textit{Param}: code the code needed to create a new access code for the user\\
+\textit{Returns}: info about the user that has just been authenticated if successful\\
 
 
 \subsection{Selected architectural Styles and patterns}
@@ -418,7 +1069,29 @@ The rust backend allows the system to handle high ammounts of requests consuming
 
 \newpage
 \section{User Interface Design}
+\begin{center}
+  \includegraphics[width=\linewidth]{mok1.png}
+ \captionof{figure}{Mock up educator's battles view}
+\label{fig:mk1}
+\end{center}
 
+\begin{center}
+  \includegraphics[width=\linewidth]{mok2.png}
+ \captionof{figure}{Mock up team creation}
+\label{fig:mk2}
+\end{center}
+
+\begin{center}
+  \includegraphics[width=\linewidth]{mok3.png}
+ \captionof{figure}{Mock up battle creation}
+\label{fig:mk3}
+\end{center}
+
+\begin{center}
+  \includegraphics[width=\linewidth]{mok4.png}
+ \captionof{figure}{Mock up submission evaluation}
+\label{fig:mk4}
+\end{center}
 
 \newpage
 \section{Requirement traceability}
@@ -912,10 +1585,10 @@ All the test will need to be repeated every time some part of the implementation
 \begin{center}
 \begin{tabular}{||l|c|c|c|c|c||}
 \hline
-Merlino Lorenzo & 2h & 20h & 2h & 4h & 5h
+Merlino Lorenzo & 2h & 22h & 2h & 4h & 5h
 \\
 \hline
-Iodice Andrea & 1h & 10h & -h & 1h & -h
+Iodice Andrea & 2h & 12h & 6h & 3h & 2h
 \\
 \hline
 \end{tabular}

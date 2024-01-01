@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  30 DEC 2023 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023 - Flatpak) (preloaded format=pdflatex 2023.9.11)  1 JAN 2024 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,7 +406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
  []
 
 [5] [6]
-<./images/hlv1.png, id=543, 654.445pt x 201.75375pt>
+<./images/hlv1.png, id=583, 654.445pt x 201.75375pt>
 File: ./images/hlv1.png Graphic file (type png)
 <use ./images/hlv1.png>
 Package pdftex.def Info: ./images/hlv1.png  used on input line 134.
@@ -432,7 +432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--147
 
  []
 
-<./images/hlv2.png, id=545, 709.65125pt x 325.215pt>
+<./images/hlv2.png, id=585, 709.65125pt x 325.215pt>
 File: ./images/hlv2.png Graphic file (type png)
 <use ./images/hlv2.png>
 Package pdftex.def Info: ./images/hlv2.png  used on input line 148.
@@ -448,7 +448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--160
  []
 
 [8 <./images/hlv2.png>]
-<./images/cv3.jpg, id=559, 685.05937pt x 1484.54625pt>
+<./images/cv3.jpg, id=599, 685.05937pt x 1484.54625pt>
 File: ./images/cv3.jpg Graphic file (type jpg)
 <use ./images/cv3.jpg>
 Package pdftex.def Info: ./images/cv3.jpg  used on input line 162.
@@ -460,7 +460,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [9 <./images/cv3.jpg>] [10]
-<./images/dv.jpg, id=569, 1310.8975pt x 1551.7975pt>
+<./images/dv.jpg, id=609, 1310.8975pt x 1551.7975pt>
 File: ./images/dv.jpg Graphic file (type jpg)
 <use ./images/dv.jpg>
 Package pdftex.def Info: ./images/dv.jpg  used on input line 191.
@@ -472,7 +472,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [11 <./images/dv.jpg>] [12]
-<./images/uc1.jpg, id=579, 1680.2775pt x 1037.8775pt>
+<./images/uc1.jpg, id=620, 1680.2775pt x 1037.8775pt>
 File: ./images/uc1.jpg Graphic file (type jpg)
 <use ./images/uc1.jpg>
 Package pdftex.def Info: ./images/uc1.jpg  used on input line 207.
@@ -484,7 +484,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [13 <./images/uc1.jpg>]
-<./images/uc2.jpg, id=586, 1856.9375pt x 1053.9375pt>
+<./images/uc2.jpg, id=627, 1856.9375pt x 1053.9375pt>
 File: ./images/uc2.jpg Graphic file (type jpg)
 <use ./images/uc2.jpg>
 Package pdftex.def Info: ./images/uc2.jpg  used on input line 214.
@@ -496,7 +496,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [14 <./images/uc2.jpg>]
-<./images/uc3.jpg, id=592, 1961.3275pt x 1277.77374pt>
+<./images/uc3.jpg, id=633, 1961.3275pt x 1277.77374pt>
 File: ./images/uc3.jpg Graphic file (type jpg)
 <use ./images/uc3.jpg>
 Package pdftex.def Info: ./images/uc3.jpg  used on input line 221.
@@ -508,7 +508,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [15 <./images/uc3.jpg>]
-<./images/uc4.jpg, id=598, 2507.3675pt x 1246.6575pt>
+<./images/uc4.jpg, id=639, 2507.3675pt x 1246.6575pt>
 File: ./images/uc4.jpg Graphic file (type jpg)
 <use ./images/uc4.jpg>
 Package pdftex.def Info: ./images/uc4.jpg  used on input line 228.
@@ -520,7 +520,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [16 <./images/uc4.jpg>]
-<./images/uc5.jpg, id=604, 1616.0375pt x 652.4375pt>
+<./images/uc5.jpg, id=645, 1616.0375pt x 652.4375pt>
 File: ./images/uc5.jpg Graphic file (type jpg)
 <use ./images/uc5.jpg>
 Package pdftex.def Info: ./images/uc5.jpg  used on input line 235.
@@ -532,7 +532,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [17 <./images/uc5.jpg>]
-<./images/uc6.jpg, id=610, 1616.0375pt x 652.4375pt>
+<./images/uc6.jpg, id=651, 1616.0375pt x 652.4375pt>
 File: ./images/uc6.jpg Graphic file (type jpg)
 <use ./images/uc6.jpg>
 Package pdftex.def Info: ./images/uc6.jpg  used on input line 242.
@@ -544,7 +544,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [18 <./images/uc6.jpg>]
-<./images/uc7.jpg, id=617, 1639.62563pt x 541.27219pt>
+<./images/uc7.jpg, id=657, 1639.62563pt x 541.27219pt>
 File: ./images/uc7.jpg Graphic file (type jpg)
 <use ./images/uc7.jpg>
 Package pdftex.def Info: ./images/uc7.jpg  used on input line 249.
@@ -556,7 +556,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [19 <./images/uc7.jpg>]
-<./images/uc8.jpg, id=624, 1645.64813pt x 1037.37563pt>
+<./images/uc8.jpg, id=664, 1645.64813pt x 1037.37563pt>
 File: ./images/uc8.jpg Graphic file (type jpg)
 <use ./images/uc8.jpg>
 Package pdftex.def Info: ./images/uc8.jpg  used on input line 256.
@@ -568,7 +568,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [20 <./images/uc8.jpg>]
-<./images/uc9.jpg, id=630, 1513.15312pt x 818.30719pt>
+<./images/uc9.jpg, id=670, 1513.15312pt x 818.30719pt>
 File: ./images/uc9.jpg Graphic file (type jpg)
 <use ./images/uc9.jpg>
 Package pdftex.def Info: ./images/uc9.jpg  used on input line 263.
@@ -580,7 +580,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [21 <./images/uc9.jpg>]
-<./images/uc10.jpg, id=636, 1260.20813pt x 362.85562pt>
+<./images/uc10.jpg, id=676, 1260.20813pt x 362.85562pt>
 File: ./images/uc10.jpg Graphic file (type jpg)
 <use ./images/uc10.jpg>
 Package pdftex.def Info: ./images/uc10.jpg  used on input line 270.
@@ -592,7 +592,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [22 <./images/uc10.jpg>]
-<./images/uc11.jpg, id=642, 1748.03062pt x 578.91281pt>
+<./images/uc11.jpg, id=682, 1748.03062pt x 578.91281pt>
 File: ./images/uc11.jpg Graphic file (type jpg)
 <use ./images/uc11.jpg>
 Package pdftex.def Info: ./images/uc11.jpg  used on input line 277.
@@ -604,7 +604,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [23 <./images/uc11.jpg>]
-<./images/uc12.jpg, id=648, 826.58812pt x 773.89125pt>
+<./images/uc12.jpg, id=688, 826.58812pt x 773.89125pt>
 File: ./images/uc12.jpg Graphic file (type jpg)
 <use ./images/uc12.jpg>
 Package pdftex.def Info: ./images/uc12.jpg  used on input line 284.
@@ -616,7 +616,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [24 <./images/uc12.jpg>]
-<./images/uc13.jpg, id=654, 1464.97313pt x 615.80063pt>
+<./images/uc13.jpg, id=694, 1464.97313pt x 615.80063pt>
 File: ./images/uc13.jpg Graphic file (type jpg)
 <use ./images/uc13.jpg>
 Package pdftex.def Info: ./images/uc13.jpg  used on input line 291.
@@ -628,157 +628,835 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [25 <./images/uc13.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--334
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--370
-
- []
-
-[26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 838--839
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--864
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--864
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 865--866
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
 
  []
 
-<./images/its1.png, id=737, 335.2525pt x 180.675pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--389
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--478
+
+ []
+
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--511
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--565
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--751
+
+ []
+
+[31] [32] [33]
+Overfull \hbox (10.41702pt too wide) in paragraph at lines 753--927
+\OT1/cmr/m/n/10 All database api call re-fer to pre-pared state-ments in the SQ
+L database \OT1/cmr/bx/n/10 cre-ate-Tour-na-ment(tournamentInfo) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--927
+
+ []
+
+[34] [35] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 929--958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--958
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--998
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1022
+
+ []
+
+[39] [40] [41]
+<./images/mok1.png, id=769, 1186.4325pt x 782.925pt>
+File: ./images/mok1.png Graphic file (type png)
+<use ./images/mok1.png>
+Package pdftex.def Info: ./images/mok1.png  used on input line 1073.
+(pdftex.def)             Requested size: 469.75502pt x 309.9867pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1074.
+See the caption package documentation for explanation.
+
+<./images/mok2.png, id=770, 1021.8175pt x 673.51625pt>
+File: ./images/mok2.png Graphic file (type png)
+<use ./images/mok2.png>
+Package pdftex.def Info: ./images/mok2.png  used on input line 1079.
+(pdftex.def)             Requested size: 469.75502pt x 309.62596pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1080.
+See the caption package documentation for explanation.
+
+[42 <./images/mok1.png>]
+<./images/mok3.png, id=777, 1169.36874pt x 773.89125pt>
+File: ./images/mok3.png Graphic file (type png)
+<use ./images/mok3.png>
+Package pdftex.def Info: ./images/mok3.png  used on input line 1085.
+(pdftex.def)             Requested size: 469.75502pt x 310.88539pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1086.
+See the caption package documentation for explanation.
+
+[43 <./images/mok2.png> <./images/mok3.png>]
+<./images/mok4.png, id=786, 1172.38pt x 769.87625pt>
+File: ./images/mok4.png Graphic file (type png)
+<use ./images/mok4.png>
+Package pdftex.def Info: ./images/mok4.png  used on input line 1091.
+(pdftex.def)             Requested size: 469.75502pt x 308.47368pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1092.
+See the caption package documentation for explanation.
+
+[44 <./images/mok4.png>] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1537
+
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1539
+
+ []
+
+<./images/its1.png, id=853, 335.2525pt x 180.675pt>
 File: ./images/its1.png Graphic file (type png)
 <use ./images/its1.png>
-Package pdftex.def Info: ./images/its1.png  used on input line 868.
+Package pdftex.def Info: ./images/its1.png  used on input line 1541.
 (pdftex.def)             Requested size: 140.92793pt x 75.94914pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 869.
+(caption)                particular \caption on input line 1542.
 See the caption package documentation for explanation.
 
-<./images/its2.png, id=738, 1116.17pt x 417.56pt>
+<./images/its2.png, id=854, 1116.17pt x 417.56pt>
 File: ./images/its2.png Graphic file (type png)
 <use ./images/its2.png>
-Package pdftex.def Info: ./images/its2.png  used on input line 874.
+Package pdftex.def Info: ./images/its2.png  used on input line 1547.
 (pdftex.def)             Requested size: 469.75502pt x 175.73717pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 875.
+(caption)                particular \caption on input line 1548.
 See the caption package documentation for explanation.
 
-<./images/its3.png, id=739, 1116.17pt x 593.21625pt>
+<./images/its3.png, id=855, 1116.17pt x 593.21625pt>
 File: ./images/its3.png Graphic file (type png)
 <use ./images/its3.png>
-Package pdftex.def Info: ./images/its3.png  used on input line 880.
+Package pdftex.def Info: ./images/its3.png  used on input line 1553.
 (pdftex.def)             Requested size: 469.75502pt x 249.66507pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 881.
+(caption)                particular \caption on input line 1554.
 See the caption package documentation for explanation.
 
-[42 <./images/its1.png (PNG copy)> <./images/its2.png (PNG copy)>]
-<./images/its4.png, id=746, 1116.17pt x 768.8725pt>
+[57 <./images/its1.png (PNG copy)> <./images/its2.png (PNG copy)>]
+<./images/its4.png, id=862, 1116.17pt x 768.8725pt>
 File: ./images/its4.png Graphic file (type png)
 <use ./images/its4.png>
-Package pdftex.def Info: ./images/its4.png  used on input line 886.
+Package pdftex.def Info: ./images/its4.png  used on input line 1559.
 (pdftex.def)             Requested size: 469.75502pt x 323.59297pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 887.
+(caption)                particular \caption on input line 1560.
 See the caption package documentation for explanation.
 
-<./images/its5.png, id=747, 1116.17pt x 944.52875pt>
+<./images/its5.png, id=863, 1116.17pt x 944.52875pt>
 File: ./images/its5.png Graphic file (type png)
 <use ./images/its5.png>
-Package pdftex.def Info: ./images/its5.png  used on input line 892.
+Package pdftex.def Info: ./images/its5.png  used on input line 1565.
 (pdftex.def)             Requested size: 469.75502pt x 397.52087pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 893.
+(caption)                particular \caption on input line 1566.
 See the caption package documentation for explanation.
 
-[43 <./images/its3.png (PNG copy)> <./images/its4.png (PNG copy)>] [44 <./image
-s/its5.png (PNG copy)>] [45] [46] [47] (./bozza_dd.aux)
+[58 <./images/its3.png (PNG copy)> <./images/its4.png (PNG copy)>] [59 <./image
+s/its5.png (PNG copy)>] [60] [61] [62] (./bozza_dd.aux)
 Package rerunfilecheck Info: File `bozza_dd.out' has not changed.
-(rerunfilecheck)             Checksum: 76E6558C7BF154B5F27BC65E78942494;12990.
+(rerunfilecheck)             Checksum: 968A19930E993C9D3E631C9DBA5A6CCB;14214.
  ) 
 Here is how much of TeX's memory you used:
- 11922 strings out of 476025
- 191314 string characters out of 5791510
+ 11997 strings out of 476025
+ 192489 string characters out of 5791510
  1873388 words of memory out of 5000000
- 32057 multiletter control sequences out of 15000+600000
+ 32101 multiletter control sequences out of 15000+600000
  517223 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,6n,76p,758b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -788,10 +1466,10 @@ st/fonts/type1/public/amsfonts/cm/cmr10.pfb></app/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></app/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr17.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on bozza_dd.pdf (47 pages, 2846947 bytes).
+Output written on bozza_dd.pdf (62 pages, 3099806 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 183 named destinations out of 1000 (max. 500000)
- 903 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 968 PDF objects out of 1000 (max. 8388607)
+ 849 compressed objects within 9 object streams
+ 210 named destinations out of 1000 (max. 500000)
+ 987 words of extra memory for PDF output out of 10000 (max. 10000000)
 
